@@ -1,0 +1,110 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_6brR8b": {
+          "type": "announcement",
+          "settings": {
+            "text": "🌿100% Wildcrafted From Jamaica",
+            "text_alignment": "center",
+            "color_scheme": "accent-1",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_6brR8b"
+      ],
+      "settings": {}
+    },
+    "2c2ec774-3430-481f-b927-e9c035b9d24e": {
+      "type": "horizontal-ticker",
+      "blocks": {
+        "sections--18060430639399__2c2ec774-3430-481f-b927-e9c035b9d24e-1679250655d32e639c-0": {
+          "type": "text",
+          "settings": {
+            "title": "🌿100% wildcrafted from Jamaica"
+          }
+        },
+        "text_3LnT3N": {
+          "type": "text",
+          "settings": {
+            "title": "🚚Fast worldwide shipping"
+          }
+        },
+        "text_JA4YNY": {
+          "type": "text",
+          "settings": {
+            "title": "⭐Over 500+ Reviews"
+          }
+        }
+      },
+      "block_order": [
+        "sections--18060430639399__2c2ec774-3430-481f-b927-e9c035b9d24e-1679250655d32e639c-0",
+        "text_3LnT3N",
+        "text_JA4YNY"
+      ],
+      "disabled": true,
+      "settings": {
+        "visibility": "always-display",
+        "speed": 2,
+        "mobile_spacing": 60,
+        "desktop_spacing": 100,
+        "color_scheme": "accent-1",
+        "text_size": "1.25",
+        "italic_text": false,
+        "uppercase_text": true,
+        "bold_text": false,
+        "mobile_image_height": 26,
+        "desktop_image_height": 40,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": false,
+        "color_scheme": "background-1",
+        "logo_link": "https://isetbynature.com/",
+        "logo_position": "top-center",
+        "menu": "main-menu",
+        "menu_position": "left",
+        "menu_type_desktop": "dropdown",
+        "highlight_active_link": true,
+        "highlighted_link_color_scheme": "accent-1",
+        "desktop_menu_font_size": 14,
+        "desktop_menu_font": "body",
+        "mobile_menu_title": "Menu",
+        "secondary_menu": "",
+        "menu_color_scheme": "background-1",
+        "mobile_logo_position": "center",
+        "display_search": true,
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 4
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "2c2ec774-3430-481f-b927-e9c035b9d24e",
+    "header"
+  ]
+}

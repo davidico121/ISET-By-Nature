@@ -1,0 +1,424 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_tePfWY": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_GNGEUA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rooted in Jamaica. Made for you.",
+            "heading_size": "h1"
+          }
+        },
+        "text_NwcGVw": {
+          "type": "text",
+          "settings": {
+            "text": "The healing traditions of the Caribbean — brought to your doorstep, exactly as nature intended.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GNGEUA",
+        "text_NwcGVw"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "image": "shopify://shop_images/d1a8e65d-7a7c-4bfd-b9b6-5717e52fe987.png",
+        "image_1_visibility": "always-display",
+        "image_2_visibility": "always-display",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "url": "",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_with_text_MW8QGz": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_DTEJrH": {
+          "type": "caption",
+          "settings": {
+            "caption": "Origin Story",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_d7jUjg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Where It All Began.",
+            "heading_size": "h1"
+          }
+        },
+        "text_wMKRVk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Long before modern supplements existed, Jamaican grandmothers were already healing their families with what grew around them. Cerasee for cleansing. Sea moss for strength. Dog Blood Bush for the womb. Bitter roots for the blood. This knowledge was never written in a textbook. It was passed down through touch, through taste, through generations of trust. Iset by Nature exists to make sure that wisdom doesn't disappear.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_DTEJrH",
+        "heading_d7jUjg",
+        "text_wMKRVk"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "image": "shopify://shop_images/8c6a9e90-dcf2-4b46-b959-6138a1c30778_1.png",
+        "video_autoplay": true,
+        "height": "adapt",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#2E2A39",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#FFFFFF",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d",
+        "custom_section_colors_background": "#FFFFFF",
+        "custom_section_gradient_background": ""
+      }
+    },
+    "image_with_text_exgBAh": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_7eJydP": {
+          "type": "caption",
+          "settings": {
+            "caption": "What We Believe",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_3qbE33": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Believe Nature Got It Right.",
+            "heading_size": "h1"
+          }
+        },
+        "text_9CymVP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The modern wellness industry is full of supplements engineered in laboratories — synthetic, processed, and packed with fillers you can't pronounce. We took a different path. Every product we sell is wildcrafted — harvested from Jamaican hillsides and coastlines, dried under the Jamaican sun, and shipped to you without interference. No fillers. </p><p><strong>No additives. No shortcuts. Just the real thing.</strong></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_7eJydP",
+        "heading_3qbE33",
+        "text_9CymVP"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "image": "shopify://shop_images/aa0caed3-3909-4494-b53c-1883e06f1738_1.png",
+        "video_autoplay": true,
+        "height": "adapt",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#2E2A39",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#FFFFFF",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d",
+        "custom_section_colors_background": "#FFFFFF",
+        "custom_section_gradient_background": ""
+      }
+    },
+    "image_with_text_diqzzA": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_HcrPbM": {
+          "type": "caption",
+          "settings": {
+            "caption": "The Products",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_izdcBq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wildcrafted. Always.",
+            "heading_size": "h1"
+          }
+        },
+        "text_CPfeFK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our range includes: Sea moss, harvested fresh from Jamaican waters.Bitter detox herbs used for centuries in Caribbean healing traditions. Roots and tonics for fertility, vitality and immune support.Powders and capsules for modern convenience without compromising purity Every batch is prepared with care. Every product is true to its source.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_HcrPbM",
+        "heading_izdcBq",
+        "text_CPfeFK"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "image": "shopify://shop_images/895e026c-1674-483b-b8d1-d487c8cf76ae.png",
+        "video_autoplay": true,
+        "height": "medium",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#2E2A39",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#FFFFFF",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d",
+        "custom_section_colors_background": "#FFFFFF",
+        "custom_section_gradient_background": ""
+      }
+    },
+    "image_with_text_wgxmQx": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_7JWMQw": {
+          "type": "caption",
+          "settings": {
+            "caption": "Why It Matters",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_GGznxy": {
+          "type": "heading",
+          "settings": {
+            "heading": "This is personal.",
+            "heading_size": "h1"
+          }
+        },
+        "text_gfVtHr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The people who find us aren't usually looking for just another supplement. They're tired of products that promise everything and deliver nothing. They're reconnecting with their roots — literally and spiritually. They want something real. That's exactly what we give them. Over 500 five-star reviews. Thousands of customers across the US, UK, Canada and beyond — all going back to the roots their grandparents never left.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_7JWMQw",
+        "heading_GGznxy",
+        "text_gfVtHr"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "image": "shopify://shop_images/personal.png",
+        "video_autoplay": true,
+        "height": "medium",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#2E2A39",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#FFFFFF",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d",
+        "custom_section_colors_background": "#FFFFFF",
+        "custom_section_gradient_background": ""
+      }
+    },
+    "rich_text_bzX9Bb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6XtmCP": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Your healing starts here.</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_BPW49m": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join thousands who have already gone back to roots. Real herbs. Real results. Real Jamaica.</p>"
+          }
+        },
+        "button_xNEGMz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All Products",
+            "button_link": "shopify://collections",
+            "button_style_secondary": true,
+            "button_label_2": "Find my remedy",
+            "button_link_2": "shopify://pages/help-me-choose",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_6XtmCP",
+        "text_BPW49m",
+        "button_xNEGMz"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "custom_colors_background": "#FFFFFF",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2E2A39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff"
+      }
+    },
+    "multicolumn_bPzkCP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Ygp9q7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/glycarin.jpg",
+            "title": "Wildcrafted From Source",
+            "text": "<p>Every herb is handpicked in Jamaica - never farmed, never synthetic.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_f4aadp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2.jpg",
+            "title": "Rooted in Jamaica",
+            "text": "<p>Centuries of Caribbean healing tradition, brought straight to you.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_m7EMVE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3.jpg",
+            "title": "Ships from the US",
+            "text": "<p>Fast, reliable delivery straight from our US warehouse to your door.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Ygp9q7",
+        "column_f4aadp",
+        "column_m7EMVE"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "slider_preview": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#FFFFFF",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2E2A39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_tePfWY",
+    "image_with_text_MW8QGz",
+    "image_with_text_exgBAh",
+    "image_with_text_diqzzA",
+    "image_with_text_wgxmQx",
+    "rich_text_bzX9Bb",
+    "multicolumn_bPzkCP"
+  ]
+}

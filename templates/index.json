@@ -1,0 +1,727 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "0cf14636-438d-4227-b017-3b91b9f6dd17": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "visibility": "always-display",
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "button_full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff"
+      }
+    },
+    "image_banner_RxFCtU": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_aVzqct": {
+          "type": "heading",
+          "settings": {
+            "heading": "Heal From The Inside Out.",
+            "heading_size": "h1"
+          }
+        },
+        "text_9cgP8q": {
+          "type": "text",
+          "settings": {
+            "text": "Wildcrafted herbs, sea moss and roots - the same remedies Caribbean grandmothers trusted for generations.",
+            "text_style": "body"
+          }
+        },
+        "buttons_pYJqcj": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop best sellers",
+            "button_link_1": "shopify://collections/best-sellers",
+            "button_style_secondary_1": true,
+            "button_label_2": "Find my Remedy",
+            "button_link_2": "shopify://pages/help-me-choose",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_aVzqct",
+        "text_9cgP8q",
+        "buttons_pYJqcj"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "image": "shopify://shop_images/4cc9b160-dd0b-4f93-a548-97b64f8f30cf.png",
+        "image_1_visibility": "always-display",
+        "image_2_visibility": "always-display",
+        "image_overlay_opacity": 20,
+        "image_height": "adapt",
+        "url": "",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "horizontal_ticker_tMLw4n": {
+      "type": "horizontal-ticker",
+      "blocks": {
+        "text_Cg3npQ": {
+          "type": "text",
+          "settings": {
+            "title": "🌿 Wildcrafted in Jamaica"
+          }
+        },
+        "text_d9w6d7": {
+          "type": "text",
+          "settings": {
+            "title": "🌱 Straight from the Source"
+          }
+        },
+        "text_XNKdQy": {
+          "type": "text",
+          "settings": {
+            "title": "🌴 Born in the Caribbean"
+          }
+        }
+      },
+      "block_order": [
+        "text_Cg3npQ",
+        "text_d9w6d7",
+        "text_XNKdQy"
+      ],
+      "name": "Horizontal Ticker",
+      "settings": {
+        "visibility": "always-display",
+        "speed": 3,
+        "mobile_spacing": 60,
+        "desktop_spacing": 100,
+        "color_scheme": "accent-1",
+        "text_size": "1.5",
+        "italic_text": false,
+        "uppercase_text": false,
+        "bold_text": false,
+        "mobile_image_height": 26,
+        "desktop_image_height": 40,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39"
+      }
+    },
+    "iset_trust_bar_WjXJdT": {
+      "type": "iset-trust-bar",
+      "blocks": {
+        "trust_item_MGY6KU": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "leaf",
+            "line1": "Wildcrafted",
+            "line2": "from source"
+          }
+        },
+        "trust_item_nj3gcD": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "shield",
+            "line1": "No fillers",
+            "line2": "or additives"
+          }
+        },
+        "trust_item_rEJyfU": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "truck",
+            "line1": "Ships from",
+            "line2": "US warehouse"
+          }
+        },
+        "trust_item_N4RcQc": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "star",
+            "line1": "500+ verified",
+            "line2": "reviews"
+          }
+        }
+      },
+      "block_order": [
+        "trust_item_MGY6KU",
+        "trust_item_nj3gcD",
+        "trust_item_rEJyfU",
+        "trust_item_N4RcQc"
+      ],
+      "disabled": true,
+      "name": "ISET Trust Bar",
+      "settings": {
+        "background_color": "#f7f3eb",
+        "icon_color": "#4a6b1a",
+        "text_color": "#3a5214"
+      }
+    },
+    "featured_collection_a4Aa9c": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "title": "Best sellers",
+        "heading_size": "h1",
+        "description": "<p>The products our community comes back for, again and again.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "color_scheme": "background-1",
+        "collection": "best-sellers",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "product_cards_stretch": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "cards_color_scheme": "accent-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "button_funcionality": "add-to-cart",
+        "button_label": "Go to product",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff"
+      }
+    },
+    "collection_list_YTbQLw": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_7UAPFM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "detox"
+          }
+        },
+        "featured_collection_HJGCeb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fertility"
+          }
+        },
+        "featured_collection_gFEfJn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "weight-loss"
+          }
+        },
+        "featured_collection_fipQ6H": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "male-vitality"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_7UAPFM",
+        "featured_collection_HJGCeb",
+        "featured_collection_gFEfJn",
+        "featured_collection_fipQ6H"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "title": "Shop By Categories",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 24,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#000000",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff"
+      }
+    },
+    "image_banner_gH7NjY": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_MEQtHB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nature's Most Powerful Sea Plant.",
+            "heading_size": "h1"
+          }
+        },
+        "text_GUTEcz": {
+          "type": "text",
+          "settings": {
+            "text": "Pure wildcrafted sea moss, harvested from Jamaican waters. No fillers, no additives — just the real thing.",
+            "text_style": "body"
+          }
+        },
+        "buttons_RttRYT": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop sea moss",
+            "button_link_1": "shopify://collections/jamaican-sea-moss",
+            "button_style_secondary_1": true,
+            "button_label_2": "See all products",
+            "button_link_2": "shopify://collections",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_MEQtHB",
+        "text_GUTEcz",
+        "buttons_RttRYT"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "image": "shopify://shop_images/2148338337.jpg",
+        "image_1_visibility": "always-display",
+        "image_2_visibility": "always-display",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "url": "",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "multicolumn_XBfWC9": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_UaW9tr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/lisa-hobbs-mRaNok_Ld6s-unsplash.jpg",
+            "title": "Detox and cleanse",
+            "text": "<p>Reset your gut and flush toxins with Jamaica's bitter herbs.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Uww4P4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/pexels-yankrukov-5480192_1.jpg",
+            "title": "Fertility support",
+            "text": "<p>Traditional roots used for generations to support your womb health.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FNbihQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/seaweed-3629075_1280.jpg",
+            "title": "Energy and vitality",
+            "text": "<p>Sea moss and roots that fuel and restore your body from inside.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mB4iBL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/20046.jpg",
+            "title": "Immune support",
+            "text": "<p>Sea moss, elderberry and Jamaican roots boost your body's defence.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_UaW9tr",
+        "column_Uww4P4",
+        "column_FNbihQ",
+        "column_mB4iBL"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "title": "Find Your Remedy",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "slider_preview": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff"
+      }
+    },
+    "image_with_text_FXp3Yz": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_H9VGxN": {
+          "type": "caption",
+          "settings": {
+            "caption": "Our story",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_JCga7C": {
+          "type": "heading",
+          "settings": {
+            "heading": "Perfected By Nature",
+            "heading_size": "h1"
+          }
+        },
+        "text_8U3eVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Iset by Nature was born from the healing traditions of Jamaica — where roots, barks, and sea plants have been medicine long before modern supplements existed. Every product we make is wildcrafted, potent, and true to the source.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_qAFVTm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read our story",
+            "button_link": "shopify://pages/our-story"
+          }
+        }
+      },
+      "block_order": [
+        "caption_H9VGxN",
+        "heading_JCga7C",
+        "text_8U3eVf",
+        "button_qAFVTm"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "image": "shopify://shop_images/5249.jpg",
+        "video_autoplay": true,
+        "height": "medium",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "custom_colors_background": "#2e2a39",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#ffffff",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d",
+        "custom_section_colors_background": "#ffffff",
+        "custom_section_gradient_background": ""
+      }
+    },
+    "image_with_text_aQm8xa": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_KcPeeY": {
+          "type": "caption",
+          "settings": {
+            "caption": "Wildcrafted Matters",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_TPqMcX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nature Knows Best",
+            "heading_size": "h1"
+          }
+        },
+        "text_3k4tCn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Most supplements are farmed, processed and packed with fillers. Ours are handpicked from Jamaican hillsides and coastlines — the way it's been done for centuries. You feel the difference from the very first use.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CcQVhj": {
+          "type": "button",
+          "settings": {
+            "button_label": "See All Products",
+            "button_link": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "caption_KcPeeY",
+        "heading_TPqMcX",
+        "text_3k4tCn",
+        "button_CcQVhj"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "image": "shopify://shop_images/pexels-yankrukov-5480238.jpg",
+        "video_autoplay": true,
+        "height": "medium",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#2e2a39",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#ffffff",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d",
+        "custom_section_colors_background": "#ffffff",
+        "custom_section_gradient_background": ""
+      }
+    },
+    "image_slider_dfd636": {
+      "type": "image-slider",
+      "blocks": {
+        "video_slide_kVd4fw": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/Download (3).mp4",
+            "loop": false,
+            "muted_autoplay": false,
+            "display_play_btn": true,
+            "btn_animation": false,
+            "btn_color_scheme": "accent-1",
+            "description": "",
+            "desc_alignment": "center",
+            "desc_color_scheme": "background-2"
+          }
+        },
+        "video_slide_QpbtzV": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/snaptik_7650660069243178248_v3.mp4",
+            "loop": false,
+            "muted_autoplay": false,
+            "display_play_btn": true,
+            "btn_animation": false,
+            "btn_color_scheme": "accent-1",
+            "description": "",
+            "desc_alignment": "center",
+            "desc_color_scheme": "background-2"
+          }
+        },
+        "video_slide_9jxEwz": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/Download (2).mp4",
+            "loop": false,
+            "muted_autoplay": false,
+            "display_play_btn": true,
+            "btn_animation": false,
+            "btn_color_scheme": "accent-1",
+            "description": "",
+            "desc_alignment": "center",
+            "desc_color_scheme": "background-2"
+          }
+        },
+        "video_slide_4Ygtpw": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/Download (4).mp4",
+            "loop": false,
+            "muted_autoplay": false,
+            "display_play_btn": true,
+            "btn_animation": false,
+            "btn_color_scheme": "accent-1",
+            "description": "",
+            "desc_alignment": "center",
+            "desc_color_scheme": "background-2"
+          }
+        }
+      },
+      "block_order": [
+        "video_slide_kVd4fw",
+        "video_slide_QpbtzV",
+        "video_slide_9jxEwz",
+        "video_slide_4Ygtpw"
+      ],
+      "name": "Image/Video Slider",
+      "settings": {
+        "visibility": "always-display",
+        "title": "Real herbs. Real talk.",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "border_radius": 0,
+        "direction": "horizontal",
+        "full_page": false,
+        "infinite": true,
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "center_mode": false,
+        "enable_fade": false,
+        "show_arrows": true,
+        "arrows_color_scheme": "inverse",
+        "show_dots": true,
+        "slides_desktop": 4,
+        "desktop_spacing": 20,
+        "slides_mobile": 2,
+        "mobile_spacing": 12,
+        "padding_top": 20,
+        "padding_bottom": 36,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#121212"
+      }
+    },
+    "rich_text_nCdLgT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wRqqA6": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Ready to go back to roots?</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_xMKQBF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Thousands of people have already made the switch to wildcrafted Jamaican herbs. Your body knows what it needs - give it something real.</p>"
+          }
+        },
+        "button_Pbzehg": {
+          "type": "button",
+          "settings": {
+            "button_label": "All Collections",
+            "button_link": "shopify://collections",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wRqqA6",
+        "text_xMKQBF",
+        "button_Pbzehg"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff"
+      }
+    },
+    "17824362451ee7d8c8": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_card_carousel_section_x43Bic": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-card-carousel-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "maxWidth": 1400,
+            "borderRadius": 8,
+            "itemsPerView": 5,
+            "mobileItemsPerView": 1,
+            "maxNumberOfCharacters": 80,
+            "imageRatio": "1.25",
+            "reviewerNameColor": "#1c2a0f",
+            "textColor": "#1c2a0f",
+            "itemBackgroundColor": "#ffffff",
+            "starsColor": "",
+            "starsBackgroundColor": "#f7f3eb",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
+            "shadow": "offset-dark",
+            "border_active": false,
+            "border_width": 2,
+            "border_color": "#000000",
+            "productIds": ""
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_card_carousel_section_x43Bic"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "0cf14636-438d-4227-b017-3b91b9f6dd17",
+    "image_banner_RxFCtU",
+    "horizontal_ticker_tMLw4n",
+    "iset_trust_bar_WjXJdT",
+    "featured_collection_a4Aa9c",
+    "collection_list_YTbQLw",
+    "image_banner_gH7NjY",
+    "multicolumn_XBfWC9",
+    "image_with_text_FXp3Yz",
+    "image_with_text_aQm8xa",
+    "image_slider_dfd636",
+    "rich_text_nCdLgT",
+    "17824362451ee7d8c8"
+  ]
+}

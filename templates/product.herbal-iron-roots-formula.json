@@ -1,0 +1,616 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "loox_reviews_loox_rating_JdEg3U": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "uppercase_title": false,
+            "desktop_size": 39,
+            "alignment": "left",
+            "mobile_size": 28,
+            "mobile_alignment": "mobile-left",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_layout": "price-first",
+            "price_color": "accent-1",
+            "compare_price_color": "text",
+            "regular_price_size": 18,
+            "sale_price_size": 20,
+            "compare_price_size": 16,
+            "hide_sale_badge": false,
+            "margin_top": 9,
+            "margin_bottom": 15
+          }
+        },
+        "text_qJFjJH": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.hero_description.value }}",
+            "text_style": "body",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "custom_liquid_YWBUeN": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<style>\n  .iset-benefit-wrap {\n    margin: 16px 0 24px;\n    font-family: Inter, Arial, sans-serif;\n    color: #1c2a0f;\n  }\n  .iset-benefit-intro {\n    font-size: 15px;\n    line-height: 1.6;\n    margin: 0 0 20px;\n    color: #3a5214;\n  }\n  .iset-benefit-intro strong {\n    font-weight: 800;\n    color: #1c2a0f;\n  }\n  .iset-benefit-grid {\n    display: grid;\n    gap: 14px;\n  }\n  .iset-benefit-item {\n    display: flex;\n    gap: 12px;\n    align-items: flex-start;\n  }\n  .iset-benefit-icon {\n    width: 32px;\n    height: 32px;\n    min-width: 32px;\n    border-radius: 999px;\n    background: #eef6d8;\n    border: 1px solid rgba(74,107,26,0.2);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  .iset-benefit-icon svg {\n    width: 16px;\n    height: 16px;\n    stroke: #4a6b1a;\n    fill: none;\n    stroke-width: 2;\n    stroke-linecap: round;\n    stroke-linejoin: round;\n  }\n  .iset-benefit-title {\n    font-size: 14px;\n    font-weight: 800;\n    margin: 0 0 3px;\n    color: #1c2a0f;\n  }\n  .iset-benefit-sub {\n    font-size: 13px;\n    color: #5a7040;\n    margin: 0;\n    line-height: 1.4;\n  }\n  @media (max-width: 749px) {\n    .iset-benefit-intro { font-size: 14.5px; }\n    .iset-benefit-title { font-size: 13.5px; }\n    .iset-benefit-sub { font-size: 12.5px; }\n  }\n</style>\n\n<div class=\"iset-benefit-wrap\">\n\n  <p class=\"iset-benefit-intro\">\n    Wildcrafted herbs, sea moss and roots from Jamaica -\n    <strong>the same remedies Caribbean grandmothers trusted for generations</strong>.\n  </p>\n\n  <div class=\"iset-benefit-grid\">\n\n    <div class=\"iset-benefit-item\">\n      <div class=\"iset-benefit-icon\">\n        <svg viewBox=\"0 0 24 24\"><path d=\"M12 2C6 9 4 13 4 16a8 8 0 0 0 16 0c0-3-2-7-8-14z\"/></svg>\n      </div>\n      <div>\n        <p class=\"iset-benefit-title\">Cleanses the blood</p>\n        <p class=\"iset-benefit-sub\">Flush toxins. Reset from inside.</p>\n      </div>\n    </div>\n\n    <div class=\"iset-benefit-item\">\n      <div class=\"iset-benefit-icon\">\n        <svg viewBox=\"0 0 24 24\"><path d=\"M12 22c0 0 8-4 8-10a8 8 0 0 0-16 0c0 6 8 10 8 10z\"/><path d=\"M12 22V12\"/></svg>\n      </div>\n      <div>\n        <p class=\"iset-benefit-title\">Feeds your body</p>\n        <p class=\"iset-benefit-sub\">92 minerals. Straight from Jamaica.</p>\n      </div>\n    </div>\n\n    <div class=\"iset-benefit-item\">\n      <div class=\"iset-benefit-icon\">\n        <svg viewBox=\"0 0 24 24\"><path d=\"M13 2L3 14h9l-1 8 10-12h-9l1-8z\"/></svg>\n      </div>\n      <div>\n        <p class=\"iset-benefit-title\">Restores your energy</p>\n        <p class=\"iset-benefit-sub\">Real nourishment your body recognises.</p>\n      </div>\n    </div>\n\n    <div class=\"iset-benefit-item\">\n      <div class=\"iset-benefit-icon\">\n        <svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20\"/></svg>\n      </div>\n      <div>\n        <p class=\"iset-benefit-title\">Rooted in Jamaica</p>\n        <p class=\"iset-benefit-sub\">Harvested by hand. Always wildcrafted.</p>\n      </div>\n    </div>\n\n  </div>\n</div>"
+          }
+        },
+        "44f9cdc2-f4bf-466e-87d5-fb765ad4864a": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_types": "pills, dropdown, dropdown",
+            "custom_labels": "",
+            "skip_unavailable": false,
+            "swatches_custom_colors": "image_alt",
+            "swatches_custom_colors_list": "#000000, #6D388B, #0000FF, #FFCC00",
+            "full_width_dropdowns": false,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "b2d15a96-0f0a-44d0-a3ae-1a090fa30347": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+            "full_width_classic": false,
+            "atc_append": "none",
+            "atc_append_heights": "stretch-quantity",
+            "enable_quantity_discounts": false,
+            "headline": "BUNDLE & SAVE",
+            "preselected": "option_1",
+            "display_badge": "none",
+            "update_pdp_prices": false,
+            "badge_text": "Most Popular",
+            "enable_variant_selectors": true,
+            "enable_variant_selectors_on_quantity_of_1": false,
+            "update_prices": true,
+            "skip_unavailable": false,
+            "color_scheme": "accent-1",
+            "option_1_quantity": 1,
+            "option_1_label": "",
+            "option_1_benefit": "",
+            "option_1_caption": "You save [amount_saved]",
+            "option_1_percentage_off_text": "0",
+            "option_1_fixed_amount_off": "0",
+            "option_1_compare_price": "compare_price",
+            "option_2_quantity": 2,
+            "option_2_label": "",
+            "option_2_benefit": "",
+            "option_2_caption": "You save [amount_saved]",
+            "option_2_percentage_off_text": "0",
+            "option_2_fixed_amount_off": "0",
+            "option_2_compare_price": "compare_price",
+            "option_3_quantity": 3,
+            "option_3_label": "",
+            "option_3_benefit": "",
+            "option_3_caption": "You save [amount_saved]",
+            "option_3_percentage_off_text": "0",
+            "option_3_fixed_amount_off": "0",
+            "option_3_compare_price": "compare_price",
+            "option_4_quantity": 4,
+            "option_4_label": "",
+            "option_4_benefit": "",
+            "option_4_caption": "You save [amount_saved]",
+            "option_4_percentage_off_text": "0",
+            "option_4_fixed_amount_off": "0",
+            "option_4_compare_price": "compare_price",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "skip_cart": false,
+            "atc_custom_label": "",
+            "display_price": false,
+            "uppercase_text": true,
+            "enable_custom_color": false,
+            "custom_color": "#6d388b",
+            "custom_text_color": "#ffffff",
+            "icon_scale": 120,
+            "icon_spacing": 10,
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "98db29ee-a7dc-429e-8129-bf71131627da": {
+          "type": "payment_badges",
+          "settings": {
+            "enabled_payment_types": "american_express, apple_pay, maestro, paypal, visa, discover, google_pay, master",
+            "width_desktop": 38,
+            "width_mobile": 38,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "custom_liquid_BRXWQV": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% comment %}\n  ISET by Nature — Social Proof Badge\n  Paste anywhere on your product page — above or below ATC button works best.\n  Replace the two avatar image URLs with real customer photos.\n{% endcomment %}\n\n<div style=\"\n  width: 100%;\n  max-width: 620px;\n  background: #eef6d8;\n  border: 2px solid #4a6b1a;\n  border-radius: 999px;\n  padding: 12px 18px;\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  font-family: Inter, Arial, sans-serif;\n  box-sizing: border-box;\n\">\n  <!-- Avatar 1 — replace src with real customer photo -->\n  <div style=\"display:flex;align-items:center;flex-shrink:0;position:relative;\">\n    <img\n      src=\"https://i.pravatar.cc/150?img=47\"\n      alt=\"Verified ISET customer\"\n      style=\"\n        width: 42px;\n        height: 42px;\n        border-radius: 50%;\n        object-fit: cover;\n        border: 3px solid #4a6b1a;\n        display: block;\n        position: relative;\n        z-index: 1;\n      \"\n    >\n    <!-- Avatar 2 — replace src with real customer photo -->\n    <div style=\"position:relative;margin-left:-10px;z-index:2;\">\n      <img\n        src=\"https://i.pravatar.cc/150?img=44\"\n        alt=\"Verified ISET customer\"\n        style=\"\n          width: 42px;\n          height: 42px;\n          border-radius: 50%;\n          object-fit: cover;\n          border: 3px solid #4a6b1a;\n          display: block;\n        \"\n      >\n      <!-- Verified checkmark -->\n      <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\" style=\"\n        position: absolute;\n        right: -3px;\n        bottom: -2px;\n        z-index: 3;\n      \">\n        <path d=\"M12 1.8l2.6 1.9 3.2-.4 1.4 2.9 2.9 1.4-.4 3.2L23.6 12l-1.9 2.6.4 3.2-2.9 1.4-1.4 2.9-3.2-.4L12 23.6l-2.6-1.9-3.2.4-1.4-2.9-2.9-1.4.4-3.2L.4 12l1.9-2.6-.4-3.2 2.9-1.4 1.4-2.9 3.2.4L12 1.8z\" fill=\"#4a6b1a\"/>\n        <path d=\"M10.6 15.7L7.8 13l1.2-1.2 1.6 1.6 4.3-4.3 1.2 1.2-5.5 5.4z\" fill=\"white\"/>\n      </svg>\n    </div>\n  </div>\n\n  <!-- Stars + Text -->\n  <div style=\"display:flex;flex-direction:column;justify-content:center;line-height:1.2;\">\n    <div style=\"display:flex;align-items:center;gap:3px;margin-bottom:3px;\">\n      <span style=\"color:#4a6b1a;font-size:12px;\">★★★★★</span>\n      <span style=\"color:#1c2a0f;font-size:10px;font-weight:700;margin-left:4px;\">500+ Verified Buyers</span>\n    </div>\n    <div style=\"color:#4a6b1a;font-size:10px;font-weight:500;\">\n      Wellness lovers across the US trust ISET by Nature\n    </div>\n  </div>\n</div>"
+          }
+        },
+        "collapsible_tab_jfph3D": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "DESCRIPTIONS",
+            "heading_size": "medium",
+            "icon": "clipboard",
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "{{ product.description }}",
+            "page": "",
+            "margin_top": 15,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_6knXKf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "INGREDIENTS",
+            "heading_size": "medium",
+            "icon": "leaf",
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p>{{ product.metafields.custom.ingredients | metafield_tag }}</p>",
+            "page": "",
+            "margin_top": 15,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_dKThXF": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "BENEFITS",
+            "heading_size": "medium",
+            "icon": "check_mark",
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p>{{ product.metafields.custom.benefits | metafield_tag }}</p>",
+            "page": "",
+            "margin_top": 15,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_KPrm8g": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "SHIPPING AND PROCESSING",
+            "heading_size": "medium",
+            "icon": "truck",
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p>Find out everything you need to know about delivery and processing times.</p>",
+            "page": "",
+            "margin_top": 15,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_mwzQVY": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "TRACK MY ORDER",
+            "heading_size": "medium",
+            "icon": "map_pin",
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p>Easily track the status and updates of your order using our order tracking system.</p>",
+            "page": "",
+            "margin_top": 15,
+            "margin_bottom": 0
+          }
+        },
+        "custom_liquid_ECbCtM": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n  .iset-trust-bar {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 24px;\n    padding: 28px 24px;\n    background: #e8e2d4;\n    font-family: Inter, Arial, sans-serif;\n  }\n  .iset-trust-item {\n    display: flex;\n    align-items: flex-start;\n    gap: 12px;\n  }\n  .iset-trust-icon {\n    width: 40px;\n    height: 40px;\n    min-width: 40px;\n    border-radius: 999px;\n    background: #eef6d8;\n    border: 1px solid rgba(74, 107, 26, 0.2);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  .iset-trust-icon svg {\n    width: 19px;\n    height: 19px;\n    stroke: #4a6b1a;\n    fill: none;\n    stroke-width: 2;\n    stroke-linecap: round;\n    stroke-linejoin: round;\n  }\n  .iset-trust-title {\n    font-size: 14.5px;\n    font-weight: 800;\n    line-height: 1.3;\n    color: #1c2a0f;\n    margin: 0 0 2px;\n  }\n  .iset-trust-sub {\n    font-size: 12.5px;\n    font-weight: 400;\n    line-height: 1.35;\n    color: #5a7040;\n    margin: 0;\n  }\n  @media (max-width: 749px) {\n    .iset-trust-bar {\n      grid-template-columns: 1fr;\n      gap: 18px;\n      padding: 22px 18px;\n    }\n  }\n</style>\n\n<div class=\"iset-trust-bar\">\n\n  <!-- Wildcrafted from Source -->\n  <div class=\"iset-trust-item\">\n    <div class=\"iset-trust-icon\">\n      <svg viewBox=\"0 0 24 24\">\n        <path d=\"M12 22c0 0 8-4 8-10a8 8 0 0 0-16 0c0 6 8 10 8 10z\"/>\n        <path d=\"M12 22V12\"/>\n      </svg>\n    </div>\n    <div>\n      <p class=\"iset-trust-title\">Wildcrafted Source</p>\n    </div>\n  </div>\n\n  <!-- Free Shipping -->\n  <div class=\"iset-trust-item\">\n    <div class=\"iset-trust-icon\">\n      <svg viewBox=\"0 0 24 24\">\n        <rect x=\"1\" y=\"3\" width=\"15\" height=\"13\" rx=\"1\"/>\n        <path d=\"M16 8h4l3 3v5h-7V8z\"/>\n        <circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/>\n        <circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/>\n      </svg>\n    </div>\n    <div>\n      <p class=\"iset-trust-title\">Free Shipping</p\n    </div>\n  </div>\n\n  <!-- Money Back Guarantee -->\n  <div class=\"iset-trust-item\">\n    <div class=\"iset-trust-icon\">\n      <svg viewBox=\"0 0 24 24\">\n        <path d=\"M12 2l8 4v5c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V6l8-4z\"/>\n        <path d=\"M9 12l2 2 4-4\"/>\n      </svg>\n    </div>\n    <div>\n      <p class=\"iset-trust-title\">30-Day Guarantee</p>\n   \n    </div>\n  </div>\n\n</div>"
+          }
+        },
+        "d505cdfe-d5cf-4aff-8e9e-abca6dae66eb": {
+          "type": "sticky_atc",
+          "settings": {
+            "function": "add_to_cart",
+            "display_when": "always",
+            "button_label": "Add to cart",
+            "enable_custom_btn_color": false,
+            "custom_btn_color": "#6d388b",
+            "color_scheme": "background-1",
+            "star_color": "#ffcc00",
+            "stars_label": "(xxxx Reviews)",
+            "picker_type": "combined",
+            "desktop_show_image": true,
+            "desktop_show_title": true,
+            "desktop_rating_stars": false,
+            "desktop_show_price": true,
+            "desktop_show_sale_badge": true,
+            "desktop_variant_picker": false,
+            "desktop_full_button_width": false,
+            "desktop_show_price_in_button": false,
+            "desktop_transparent_bg": false,
+            "mobile_show_image": true,
+            "mobile_show_title": true,
+            "mobile_rating_stars": false,
+            "mobile_show_price": true,
+            "mobile_show_sale_badge": true,
+            "mobile_variant_picker": false,
+            "mobile_full_button_width": false,
+            "mobile_show_price_in_button": false,
+            "mobile_transparent_bg": false
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_rating_JdEg3U",
+        "title",
+        "price",
+        "text_qJFjJH",
+        "custom_liquid_YWBUeN",
+        "44f9cdc2-f4bf-466e-87d5-fb765ad4864a",
+        "b2d15a96-0f0a-44d0-a3ae-1a090fa30347",
+        "buy_buttons",
+        "98db29ee-a7dc-429e-8129-bf71131627da",
+        "custom_liquid_BRXWQV",
+        "collapsible_tab_jfph3D",
+        "collapsible_tab_6knXKf",
+        "collapsible_tab_dKThXF",
+        "collapsible_tab_KPrm8g",
+        "collapsible_tab_mwzQVY",
+        "custom_liquid_ECbCtM",
+        "d505cdfe-d5cf-4aff-8e9e-abca6dae66eb"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "display_variant_image_first": false,
+        "disable_prepend": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "desktop_thumbnails_count": 5,
+        "video_player": "play_btn",
+        "enable_video_looping": false,
+        "autoplay_videos_pause_btn": false,
+        "play_btn_color_scheme": "accent-1",
+        "mobile_thumbnails": "hide",
+        "mobile_media_corner_radius": 0,
+        "mobile_spacing": false,
+        "mobile_preview_media": false,
+        "mobile_thumbnails_count": 5,
+        "mobile_pagination": "dots_under",
+        "hide_arrows": true,
+        "dots_color_scheme": "inverse",
+        "trust_badge_position": "top-right",
+        "trust_badge_size": "medium",
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 16,
+        "desktop_padding_top": 36,
+        "desktop_padding_bottom": 36
+      }
+    },
+    "horizontal_ticker_TgbchM": {
+      "type": "horizontal-ticker",
+      "blocks": {
+        "text_dYUwB4": {
+          "type": "text",
+          "settings": {
+            "title": "🌿 100% Wildcrafted from Jamaica"
+          }
+        },
+        "text_BQnmnc": {
+          "type": "text",
+          "settings": {
+            "title": "🌊 Pure Sea Moss"
+          }
+        },
+        "text_awPYzR": {
+          "type": "text",
+          "settings": {
+            "title": "💚 No Fillers. No Additives."
+          }
+        },
+        "text_GNmmyA": {
+          "type": "text",
+          "settings": {
+            "title": "🌱 Nature's Herbs"
+          }
+        }
+      },
+      "block_order": [
+        "text_dYUwB4",
+        "text_BQnmnc",
+        "text_awPYzR",
+        "text_GNmmyA"
+      ],
+      "name": "Horizontal Ticker",
+      "settings": {
+        "visibility": "always-display",
+        "speed": 3,
+        "mobile_spacing": 60,
+        "desktop_spacing": 100,
+        "color_scheme": "accent-1",
+        "text_size": "1.5",
+        "italic_text": false,
+        "uppercase_text": false,
+        "bold_text": false,
+        "mobile_image_height": 26,
+        "desktop_image_height": 40,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39"
+      }
+    },
+    "rich_text_E3wPxY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Qbqant": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>This Isn't A Supplement. It's A Tradition.</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_3jkYay": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Before capsules. Before powders. Before the wellness industry existed - Jamaican families were already healing with what grew around them. That's exactly what we bottle.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Qbqant",
+        "text_3jkYay"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff"
+      }
+    },
+    "image_with_text_RJXTa9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_U7WbxE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Straight from Jamaican soil.",
+            "heading_size": "h1"
+          }
+        },
+        "text_WjfCAB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This herb has been growing wild in Jamaica for centuries. We wildcraft it by hand, dry it under the Jamaican sun, and ship it to you without interference. No processing. No additives. No compromise.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_U7WbxE",
+        "text_WjfCAB"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "visibility": "always-display",
+        "image": "shopify://shop_images/2148791497.jpg",
+        "video_autoplay": true,
+        "height": "adapt",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#2e2a39",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#ffffff",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d",
+        "custom_section_colors_background": "#ffffff",
+        "custom_section_gradient_background": ""
+      }
+    },
+    "bb7d2784-ae42-434b-aece-ca60bb5e9aa5": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19031306928423__bb7d2784-ae42-434b-aece-ca60bb5e9aa5-1687916948e5f2d585-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is this really wildcrafted from Jamaica?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes — every herb is handpicked from Jamaican soil. Never farmed, never synthetic. We work directly with Jamaican harvesters to ensure quality and authenticity at the source.</p>",
+            "page": ""
+          }
+        },
+        "template--19031306928423__bb7d2784-ae42-434b-aece-ca60bb5e9aa5-1687916948e5f2d585-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long until I feel a difference?",
+            "icon": "check_mark",
+            "row_content": "<p>Most customers notice changes within 7–14 days of consistent daily use. Detox and energy benefits are usually felt first. Give your body time — real healing isn't instant.</p>",
+            "page": ""
+          }
+        },
+        "template--19031306928423__bb7d2784-ae42-434b-aece-ca60bb5e9aa5-1687916948e5f2d585-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any fillers or additives?",
+            "icon": "check_mark",
+            "row_content": "<p>Absolutely not. We never add fillers, binders, or synthetic ingredients. What's on the label is everything that's in the bag — nothing more.</p>",
+            "page": ""
+          }
+        },
+        "template--19031306928423__bb7d2784-ae42-434b-aece-ca60bb5e9aa5-1687916948e5f2d585-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if it doesn't work for me?",
+            "icon": "check_mark",
+            "row_content": "<p>We offer a 30-day hassle-free return policy. If you're not satisfied, contact us and we'll make it right — no questions asked.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_p37eT3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I cancel my subscription anytime?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes - cancel anytime, no commitment. Your subscription can be paused, modified, or cancelled directly from your account dashboard.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19031306928423__bb7d2784-ae42-434b-aece-ca60bb5e9aa5-1687916948e5f2d585-0",
+        "template--19031306928423__bb7d2784-ae42-434b-aece-ca60bb5e9aa5-1687916948e5f2d585-1",
+        "template--19031306928423__bb7d2784-ae42-434b-aece-ca60bb5e9aa5-1687916948e5f2d585-2",
+        "template--19031306928423__bb7d2784-ae42-434b-aece-ca60bb5e9aa5-1687916948e5f2d585-3",
+        "collapsible_row_p37eT3"
+      ],
+      "settings": {
+        "visibility": "always-display",
+        "caption": "",
+        "title": "Frequently Asked Questions",
+        "title_highlight_color": "#dd1d1d",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "row_heading_size": "medium",
+        "collapse_icon": "plus",
+        "display_top_border": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_contaner_colors_background": "#ffffff",
+        "custom_container_gradient_background": "",
+        "custom_contaner_colors_text": "#2e2a39"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Also Bought",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "stretch_cards": true,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "button_funcionality": "add-to-cart",
+        "button_label": "Go to product",
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "1782428326938f39e7": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_Xe7RCb": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_Xe7RCb"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "horizontal_ticker_TgbchM",
+    "rich_text_E3wPxY",
+    "image_with_text_RJXTa9",
+    "bb7d2784-ae42-434b-aece-ca60bb5e9aa5",
+    "related-products",
+    "1782428326938f39e7"
+  ]
+}
