@@ -74,15 +74,14 @@
   }
 
   #shopify-section-{{ section.id }} .ip-cmp-col-icon {
-    width: auto;
-    max-width: 72px;
-    height: 120px;
+    width: 36px;
+    height: 36px;
     object-fit: contain;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
   }
   #shopify-section-{{ section.id }} .ip-cmp-header .ip-cmp-cell {
-    padding-top: 28px;
-    padding-bottom: 22px;
+    padding-top: 20px;
+    padding-bottom: 18px;
   }
   #shopify-section-{{ section.id }} .ip-cmp-col-label {
     font-size: 14px;
@@ -137,9 +136,8 @@
       font-size: 12px;
     }
     #shopify-section-{{ section.id }} .ip-cmp-col-icon {
-      max-width: 48px;
-      height: 80px;
-      margin-bottom: 8px;
+      width: 26px;
+      height: 26px;
     }
     #shopify-section-{{ section.id }} .ip-cmp-badge {
       width: 22px;
@@ -168,8 +166,6 @@
         <div class="ip-cmp-cell ip-cmp-cell--ours">
           {%- if section.settings.our_column_image != blank -%}
             {{ section.settings.our_column_image | image_url: width: 240 | image_tag: class: 'ip-cmp-col-icon', loading: 'lazy' }}
-          {%- elsif product.featured_image != blank -%}
-            {{ product.featured_image | image_url: width: 240 | image_tag: class: 'ip-cmp-col-icon', loading: 'lazy' }}
           {%- endif -%}
           <span class="ip-cmp-col-label">{{ section.settings.our_column_label | escape }}</span>
         </div>
@@ -268,8 +264,7 @@
     {
       "type": "image_picker",
       "id": "our_column_image",
-      "label": "Our column image (optional)",
-      "info": "Defaults to the product's featured image if left blank."
+      "label": "Our column icon (optional)"
     },
     {
       "type": "color",
