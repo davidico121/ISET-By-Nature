@@ -173,7 +173,7 @@
             "collapse_icon": "plus",
             "display_top_border": true,
             "open": false,
-            "content": "<ul><li>Sarsaparilla Root</li><li>Chaney Root</li><li>Cocolmeca</li><li>Strongback Root</li><li>Allman Strength</li><li>Four Vein</li></ul>",
+            "content": "<ul><li>Sarsaparilla Root</li><li>Chaney Root</li><li>Strongback</li><li>Jolt of Strength</li><li>Ramoon Bark</li><li>Puron Bark</li><li>Blue Vervain Root</li><li>Four Man Strength</li></ul>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -362,7 +362,7 @@
         "text_BQnmnc": {
           "type": "text",
           "settings": {
-            "title": "\ud83c\udf31 6 Wildcrafted Roots"
+            "title": "\ud83c\udf31 8 Wildcrafted Roots"
           }
         },
         "text_awPYzR": {
@@ -420,8 +420,6 @@
     },
     "image_with_text_RJXTa9": {
       "type": "iset-how-to-split",
-      "blocks": {},
-      "block_order": [],
       "settings": {
         "image": "shopify://shop_images/2148791497.jpg",
         "placeholder_icon": "\ud83c\udf3f",
@@ -468,7 +466,7 @@
         "eyebrow_color": "#4a6b1a",
         "heading": "Same roots. No brewing required.",
         "heading_color": "#1c2a0f",
-        "subheading": "If you want the tradition of Herbal Iron without the daily brew, this is it: the same 6 wildcrafted Jamaican roots, in a capsule you can take anywhere. For home, travel, or mornings when there's no time to brew.",
+        "subheading": "If you want the tradition of Herbal Iron without the daily brew, this is it: the same 8 wildcrafted Jamaican roots, in a capsule you can take anywhere. For home, travel, or mornings when there's no time to brew.",
         "subheading_color": "#5a7040",
         "cta_bg_color": "#1c2a0f",
         "cta_text_color": "#f5f0e8",
@@ -487,7 +485,7 @@
           "settings": {
             "row_label": "Root Count",
             "our_icon": "check",
-            "our_value": "6",
+            "our_value": "8",
             "comp1_icon": "x",
             "comp1_value": "0",
             "comp2_icon": "x",
@@ -558,6 +556,10 @@
         "our_column_label": "HERBAL IRON",
         "our_column_image": "",
         "our_column_bg": "#eef4e6",
+        "show_badge": true,
+        "badge_text": "Our Pick",
+        "badge_bg_color": "#4a6b1a",
+        "badge_text_color": "#f5f0e8",
         "comp1_label": "Generic Multivitamin",
         "comp1_image": "",
         "comp2_label": "Synthetic Energy Pills",
@@ -569,11 +571,7 @@
         "border_color": "#ececea",
         "background_color": "#f7f3eb",
         "padding_top": 52,
-        "padding_bottom": 52,
-        "show_badge": true,
-        "badge_text": "Our Pick",
-        "badge_bg_color": "#4a6b1a",
-        "badge_text_color": "#f5f0e8"
+        "padding_bottom": 52
       }
     },
     "guarantee_section": {
@@ -760,44 +758,66 @@
           "type": "root",
           "settings": {
             "image": "",
-            "name": "Cocolmeca",
-            "scientific_name": "",
-            "description": "A traditional Caribbean root, often paired with sarsaparilla in classic tonics.",
-            "key_features_heading": "Key Features:",
-            "key_features": "A traditional Caribbean root, often paired with sarsaparilla in classic tonics.\nKnown for its woody, earthy character in root tonic blends.\nPassed down through generations as part of traditional herbal practice."
-          }
-        },
-        "root_04": {
-          "type": "root",
-          "settings": {
-            "image": "",
-            "name": "Strongback Root",
+            "name": "Strongback",
             "scientific_name": "Morinda royoc",
             "description": "Named for its traditional reputation supporting strength and endurance.",
             "key_features_heading": "Key Features:",
             "key_features": "Named for its traditional reputation supporting strength and endurance.\nA fixture in Caribbean root tonics for generations.\nOften included alongside other roots in traditional blends."
           }
         },
+        "root_04": {
+          "type": "root",
+          "settings": {
+            "image": "",
+            "name": "Jolt of Strength",
+            "scientific_name": "Pithecoctenium echinatum",
+            "description": "Prized in traditional preparations for a natural, energizing lift.",
+            "key_features_heading": "Key Features:",
+            "key_features": "Prized in traditional preparations for a natural, energizing lift.\nCommonly brewed as part of a daily root tonic.\nCarries a distinct, robust character in traditional recipes."
+          }
+        },
         "root_05": {
           "type": "root",
           "settings": {
             "image": "",
-            "name": "Allman Strength",
-            "scientific_name": "",
-            "description": "Named for its traditional reputation supporting strength and resilience.",
+            "name": "Ramoon Bark",
+            "scientific_name": "Trophis racemosa",
+            "description": "Used traditionally as part of a daily wellness tonic.",
             "key_features_heading": "Key Features:",
-            "key_features": "Named for its traditional reputation supporting strength and resilience.\nA fixture in Caribbean root tonics for generations.\nOften included in traditional blends alongside other strengthening roots."
+            "key_features": "Used traditionally as part of a daily wellness tonic.\nSourced from bark rather than root, adding body to the blend.\nA long-standing ingredient in Caribbean herbal preparations."
           }
         },
         "root_06": {
           "type": "root",
           "settings": {
             "image": "",
-            "name": "Four Vein",
-            "scientific_name": "",
-            "description": "A traditional tonic root valued for its place in Caribbean herbal practice.",
+            "name": "Puron Bark",
+            "scientific_name": "Prunus occidentalis",
+            "description": "A traditional ingredient valued for its grounding, nourishing qualities.",
             "key_features_heading": "Key Features:",
-            "key_features": "A traditional tonic root valued for its place in Caribbean herbal practice.\nPassed down as part of time-honored root blending tradition.\nCarries a distinct character in traditional root tonic recipes."
+            "key_features": "A traditional ingredient valued for its grounding, nourishing qualities.\nContributes a smooth, mellow note to root tonic blends.\nHarvested as bark, used alongside root ingredients in tradition."
+          }
+        },
+        "root_07": {
+          "type": "root",
+          "settings": {
+            "image": "",
+            "name": "Blue Vervain Root",
+            "scientific_name": "Stachytarpheta jamaicensis",
+            "description": "Traditionally used to support calm and balance.",
+            "key_features_heading": "Key Features:",
+            "key_features": "Traditionally used to support calm and balance.\nA well-known bush medicine plant across the Caribbean.\nOften brewed on its own or blended into root tonics."
+          }
+        },
+        "root_08": {
+          "type": "root",
+          "settings": {
+            "image": "",
+            "name": "Four Man Strength",
+            "scientific_name": "",
+            "description": "Named for its traditional reputation as a potent tonic root.",
+            "key_features_heading": "Key Features:",
+            "key_features": "Named for its traditional reputation as a potent tonic root.\nA staple in traditional root tonic recipes for generations.\nPassed down as part of time-honored herbal blending practice."
           }
         }
       },
@@ -807,12 +827,14 @@
         "root_03",
         "root_04",
         "root_05",
-        "root_06"
+        "root_06",
+        "root_07",
+        "root_08"
       ],
       "settings": {
         "heading": "What's actually in it",
         "heading_color": "#1c2a0f",
-        "subheading": "Six wildcrafted roots, each with centuries of Jamaican herbal tradition behind it.",
+        "subheading": "Eight wildcrafted roots, each with centuries of Jamaican herbal tradition behind it.",
         "subheading_color": "#5a7040",
         "active_color": "#4a6b1a",
         "border_color": "#4a6b1a2e",
@@ -848,7 +870,7 @@
           "settings": {
             "icon": "shield",
             "title": "No Fillers, No Additives",
-            "description": "Just 6 wildcrafted roots. Nothing synthetic, ever."
+            "description": "Just 8 wildcrafted roots. Nothing synthetic, ever."
           }
         },
         "benefit_04": {
@@ -876,7 +898,7 @@
         "eyebrow_color": "#4a6b1a",
         "heading": "Whole-Body Support, Rooted in Tradition",
         "heading_color": "#1c2a0f",
-        "subheading": "6 wildcrafted roots in every capsule.",
+        "subheading": "8 wildcrafted roots in every capsule.",
         "subheading_color": "#5a7040",
         "icon_color": "#4a6b1a",
         "benefit_title_color": "#1c2a0f",
