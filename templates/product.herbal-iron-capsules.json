@@ -268,6 +268,21 @@
             "mobile_show_price_in_button": false,
             "mobile_transparent_bg": false
           }
+        },
+        "iset_trust_badges_1": {
+          "type": "iset_trust_badges",
+          "settings": {
+            "badge_1_icon": "leaf",
+            "badge_1_label": "100% Wildcrafted",
+            "badge_2_icon": "shield",
+            "badge_2_label": "No Fillers, No Additives",
+            "badge_3_icon": "truck",
+            "badge_3_label": "Secure, Tracked Shipping",
+            "icon_color": "#4a6b1a",
+            "text_color": "#1c2a0f",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
         }
       },
       "block_order": [
@@ -278,6 +293,7 @@
         "44f9cdc2-f4bf-466e-87d5-fb765ad4864a",
         "b2d15a96-0f0a-44d0-a3ae-1a090fa30347",
         "buy_buttons",
+        "iset_trust_badges_1",
         "98db29ee-a7dc-429e-8129-bf71131627da",
         "custom_liquid_BRXWQV",
         "collapsible_tab_jfph3D",

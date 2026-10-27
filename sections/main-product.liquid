@@ -700,6 +700,75 @@
                 quantity_selector_html: quantity_selector_html,
                 quantity_atc_append_heights: quantity_atc_append_heights
               %}
+            {%- when 'iset_trust_badges' -%}
+              <div
+                class="iset-trust-badges"
+                style="--margin-top: {{ block.settings.margin_top | divided_by: 10.0 }}rem;--margin-bottom: {{ block.settings.margin_bottom | divided_by: 10.0 }}rem;"
+                {{ block.shopify_attributes }}
+              >
+                <style>
+                  #shopify-section-{{ section.id }} .iset-trust-badges {
+                    margin-top: var(--margin-top);
+                    margin-bottom: var(--margin-bottom);
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 16px 8px;
+                  }
+                  #shopify-section-{{ section.id }} .iset-trust-badge {
+                    flex: 1 1 0;
+                    min-width: 90px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: 8px;
+                  }
+                  #shopify-section-{{ section.id }} .iset-trust-badge-icon {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 999px;
+                    border: 1.5px solid {{ block.settings.icon_color }};
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: {{ block.settings.icon_color }};
+                  }
+                  #shopify-section-{{ section.id }} .iset-trust-badge-icon svg {
+                    width: 20px;
+                    height: 20px;
+                  }
+                  #shopify-section-{{ section.id }} .iset-trust-badge-label {
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 1.3;
+                    color: {{ block.settings.text_color }};
+                  }
+                </style>
+                {%- for i in (1..3) -%}
+                  {%- assign icon_key = 'badge_' | append: i | append: '_icon' -%}
+                  {%- assign label_key = 'badge_' | append: i | append: '_label' -%}
+                  {%- assign icon_value = block.settings[icon_key] -%}
+                  {%- assign label_value = block.settings[label_key] -%}
+                  {%- if label_value != blank -%}
+                    <div class="iset-trust-badge">
+                      <div class="iset-trust-badge-icon">
+                        {%- case icon_value -%}
+                          {%- when 'check' -%}
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                          {%- when 'shield' -%}
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v5c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V6l8-4z"/></svg>
+                          {%- when 'truck' -%}
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                          {%- when 'leaf' -%}
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 20 2c0 0 1.5 10-3 15-2 2.2-4.5 2.5-6 3z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 11 13 11 13"/></svg>
+                        {%- endcase -%}
+                      </div>
+                      <div class="iset-trust-badge-label">{{ label_value | escape }}</div>
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
             {%- when 'reviews' -%}
               {%- render 'reviews', block: block -%}
             {%- when 'rating' -%}
@@ -2922,6 +2991,118 @@
           "id": "custom_liquid",
           "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
           "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
+        }
+      ]
+    },
+    {
+      "type": "iset_trust_badges",
+      "name": "ISET Trust badges (3)",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Badge 1"
+        },
+        {
+          "type": "select",
+          "id": "badge_1_icon",
+          "label": "Icon",
+          "options": [
+            { "value": "check", "label": "Checkmark" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "truck", "label": "Truck" },
+            { "value": "leaf", "label": "Leaf" }
+          ],
+          "default": "leaf"
+        },
+        {
+          "type": "text",
+          "id": "badge_1_label",
+          "label": "Label",
+          "default": "100% Wildcrafted"
+        },
+        {
+          "type": "header",
+          "content": "Badge 2"
+        },
+        {
+          "type": "select",
+          "id": "badge_2_icon",
+          "label": "Icon",
+          "options": [
+            { "value": "check", "label": "Checkmark" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "truck", "label": "Truck" },
+            { "value": "leaf", "label": "Leaf" }
+          ],
+          "default": "shield"
+        },
+        {
+          "type": "text",
+          "id": "badge_2_label",
+          "label": "Label",
+          "default": "No Fillers, No Additives"
+        },
+        {
+          "type": "header",
+          "content": "Badge 3"
+        },
+        {
+          "type": "select",
+          "id": "badge_3_icon",
+          "label": "Icon",
+          "options": [
+            { "value": "check", "label": "Checkmark" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "truck", "label": "Truck" },
+            { "value": "leaf", "label": "Leaf" }
+          ],
+          "default": "truck"
+        },
+        {
+          "type": "text",
+          "id": "badge_3_label",
+          "label": "Label",
+          "default": "Secure, Tracked Shipping"
+        },
+        {
+          "type": "header",
+          "content": "Styling"
+        },
+        {
+          "type": "color",
+          "id": "icon_color",
+          "label": "Icon + circle color",
+          "default": "#4a6b1a"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Label text color",
+          "default": "#1c2a0f"
+        },
+        {
+          "type": "header",
+          "content": "Block margin"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "min": 0,
+          "max": 30,
+          "step": 3,
+          "unit": "px",
+          "label": "Top margin",
+          "default": 15
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "min": 0,
+          "max": 30,
+          "step": 3,
+          "unit": "px",
+          "label": "Bottom margin",
+          "default": 15
         }
       ]
     },
