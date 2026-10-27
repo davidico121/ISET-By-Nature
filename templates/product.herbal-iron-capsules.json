@@ -676,16 +676,16 @@
       ],
       "settings": {
         "heading": "Quality You Can Trust",
-        "heading_color": "#2d6a2d",
+        "heading_color": "#f5f0e8",
         "body": "Herbal Iron Capsules are wildcrafted and prepared the traditional way, with nothing synthetic added. No fillers. No shortcuts. Just roots.",
-        "body_color": "#3a3a2e",
-        "badge_color": "#e8622c",
-        "claim_text_color": "#1c2a0f",
+        "body_color": "#ffffffa6",
+        "badge_color": "#8aab35",
+        "claim_text_color": "#f5f0e8",
         "show_cta": true,
         "cta_label": "Shop Now",
-        "cta_bg_color": "#1c2a0f",
-        "cta_text_color": "#f5f0e8",
-        "background_color": "#fdf3d9",
+        "cta_bg_color": "#f5f0e8",
+        "cta_text_color": "#1c2a0f",
+        "background_color": "#1c2a0f",
         "padding_top": 56,
         "padding_bottom": 56
       }
