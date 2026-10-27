@@ -43,7 +43,7 @@
   }
   #shopify-section-{{ section.id }} .ip-cmp-row {
     display: grid;
-    grid-template-columns: 1fr 0.95fr 0.95fr 0.95fr;
+    grid-template-columns: 0.85fr 0.85fr 1.05fr 1.05fr;
   }
   #shopify-section-{{ section.id }} .ip-cmp-row:not(:last-child) {
     border-bottom: 1px solid {{ section.settings.border_color }};
@@ -55,7 +55,7 @@
 
   #shopify-section-{{ section.id }} .ip-cmp-cell {
     min-height: 66px;
-    padding: 12px 8px;
+    padding: 12px 6px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +86,7 @@
     padding-bottom: 16px;
   }
   #shopify-section-{{ section.id }} .ip-cmp-col-label {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.25;
     color: {{ section.settings.heading_color }};
@@ -126,6 +126,10 @@
   #shopify-section-{{ section.id }} .ip-cmp-badge--x {
     background: {{ section.settings.x_badge_color }};
     color: {{ section.settings.x_badge_icon_color }};
+  }
+  #shopify-section-{{ section.id }} .ip-cmp-badge--spacer {
+    background: transparent;
+    visibility: hidden;
   }
 
   /* Desktop / larger screens: scale everything up for legibility. */
@@ -211,6 +215,8 @@
           <div class="ip-cmp-cell ip-cmp-cell--ours">
             {%- if block.settings.our_icon == 'check' -%}
               <span class="ip-cmp-badge ip-cmp-badge--check">&#10003;</span>
+            {%- else -%}
+              <span class="ip-cmp-badge ip-cmp-badge--spacer" aria-hidden="true"></span>
             {%- endif -%}
             {%- if block.settings.our_value != blank -%}
               <span class="ip-cmp-value">{{ block.settings.our_value | escape }}</span>
@@ -222,6 +228,8 @@
               <span class="ip-cmp-badge ip-cmp-badge--check">&#10003;</span>
             {%- elsif block.settings.comp1_icon == 'x' -%}
               <span class="ip-cmp-badge ip-cmp-badge--x">&#10005;</span>
+            {%- else -%}
+              <span class="ip-cmp-badge ip-cmp-badge--spacer" aria-hidden="true"></span>
             {%- endif -%}
             {%- if block.settings.comp1_value != blank -%}
               <span class="ip-cmp-value">{{ block.settings.comp1_value | escape }}</span>
@@ -233,6 +241,8 @@
               <span class="ip-cmp-badge ip-cmp-badge--check">&#10003;</span>
             {%- elsif block.settings.comp2_icon == 'x' -%}
               <span class="ip-cmp-badge ip-cmp-badge--x">&#10005;</span>
+            {%- else -%}
+              <span class="ip-cmp-badge ip-cmp-badge--spacer" aria-hidden="true"></span>
             {%- endif -%}
             {%- if block.settings.comp2_value != blank -%}
               <span class="ip-cmp-value">{{ block.settings.comp2_value | escape }}</span>
