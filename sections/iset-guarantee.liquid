@@ -40,6 +40,25 @@
     color: {{ section.settings.body_color }};
     margin: 0;
   }
+  #shopify-section-{{ section.id }} .ip-guarantee-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 13px 32px;
+    border-radius: 999px;
+    background: {{ section.settings.cta_bg_color }};
+    color: {{ section.settings.cta_text_color }};
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  #shopify-section-{{ section.id }} .ip-guarantee-cta:hover {
+    opacity: 0.88;
+  }
 </style>
 
 <div class="ip-guarantee">
@@ -54,9 +73,28 @@
       {%- if section.settings.body != blank -%}
         <p>{{ section.settings.body | escape }}</p>
       {%- endif -%}
+      {%- if section.settings.show_cta and section.settings.cta_label != blank -%}
+        <a href="#MainContent" class="ip-guarantee-cta" data-scroll-to-top>{{ section.settings.cta_label | escape }}</a>
+      {%- endif -%}
     </div>
   </div>
 </div>
+
+<script>
+  (function() {
+    var section = document.getElementById('shopify-section-{{ section.id }}');
+    if (!section) return;
+    var trigger = section.querySelector('[data-scroll-to-top]');
+    if (!trigger) return;
+    trigger.addEventListener('click', function(e) {
+      var target = document.getElementById('MainContent');
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  })();
+</script>
 
 {% schema %}
 {
@@ -91,6 +129,35 @@
       "id": "body_color",
       "label": "Body text color",
       "default": "#ffffffa6"
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_cta",
+      "label": "Show call-to-action button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Button label",
+      "default": "Shop Now",
+      "info": "Scrolls back up to the buy box."
+    },
+    {
+      "type": "color",
+      "id": "cta_bg_color",
+      "label": "Button background",
+      "default": "#f5f0e8"
+    },
+    {
+      "type": "color",
+      "id": "cta_text_color",
+      "label": "Button text color",
+      "default": "#1c2a0f"
     },
     {
       "type": "header",

@@ -504,12 +504,20 @@
             "text": "<p>If you want the tradition of Herbal Iron without the daily brew, this is it: the same 8 wildcrafted Jamaican roots, in a capsule you can take anywhere. For home, travel, or mornings when there's no time to brew.</p>",
             "text_style": "body"
           }
+        },
+        "button_shop_now": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "#MainContent"
+          }
         }
       },
       "block_order": [
         "caption_x6xy7k",
         "heading_46i4cU",
-        "text_Q8Gcwc"
+        "text_Q8Gcwc",
+        "button_shop_now"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
