@@ -106,7 +106,7 @@
     </small>
   </div>
   {%- if show_badges -%}
-    {% unless hide_sale_badge %}
+    {% unless hide_sale_badge or compare_at_price == blank or compare_at_price <= price %}
       <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
         {% capture percentage_saved %}
           <span class="badge__percentage-saved">{{ compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | floor }}</span>%
