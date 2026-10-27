@@ -489,9 +489,9 @@
             "our_icon": "check",
             "our_value": "Wildcrafted",
             "comp1_icon": "x",
-            "comp1_value": "Lab-made",
+            "comp1_value": "Lab\u2011made",
             "comp2_icon": "x",
-            "comp2_value": "Lab-made"
+            "comp2_value": "Lab\u2011made"
           }
         },
         "row_3": {
