@@ -185,6 +185,21 @@
             "margin_bottom": 0
           }
         },
+        "collapsible_tab_how_to_use": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "HOW TO USE",
+            "heading_size": "medium",
+            "icon": "stopwatch",
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p>Take 2–3 capsules each morning upon waking, with water. One bottle lasts about a month at the recommended dose. Best taken at the same time each day.</p>",
+            "page": "",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
         "collapsible_tab_KPrm8g": {
           "type": "collapsible_tab",
           "settings": {
@@ -252,21 +267,6 @@
             "mobile_full_button_width": false,
             "mobile_show_price_in_button": false,
             "mobile_transparent_bg": false
-          }
-        },
-        "collapsible_tab_how_to_use": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "HOW TO USE",
-            "heading_size": "medium",
-            "icon": "stopwatch",
-            "collapse_icon": "plus",
-            "display_top_border": true,
-            "open": false,
-            "content": "<p>Take 2–3 capsules each morning upon waking, with water. One bottle lasts about a month at the recommended dose. Best taken at the same time each day.</p>",
-            "page": "",
-            "margin_top": 0,
-            "margin_bottom": 0
           }
         }
       },
@@ -464,22 +464,153 @@
         "custom_section_gradient_background": ""
       }
     },
-    "why_capsules_section": {
-      "type": "iset-how-to-split",
+    "image_with_text_aaPQ8P": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_x6xy7k": {
+          "type": "caption",
+          "settings": {
+            "caption": "Why capsules",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_46i4cU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Same roots. No brewing required.",
+            "heading_size": "h1"
+          }
+        },
+        "text_Q8Gcwc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you want the tradition of Herbal Iron without the daily brew, this is it: the same 8 wildcrafted Jamaican roots, in a capsule you can take anywhere. For home, travel, or mornings when there's no time to brew.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_x6xy7k",
+        "heading_46i4cU",
+        "text_Q8Gcwc"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "placeholder_icon": "🎒",
-        "image_position": "right",
-        "image_aspect_ratio": "1/1",
-        "image_radius": 24,
-        "image_placeholder_bg": "#eef6d8",
-        "eyebrow": "Why capsules",
-        "eyebrow_color": "#4a6b1a",
-        "heading": "Same roots. No brewing required.",
+        "visibility": "always-display",
+        "video_autoplay": true,
+        "height": "adapt",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#2e2a39",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#ffffff",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_outline_button": "#dd1d1d",
+        "custom_section_colors_background": "#ffffff",
+        "custom_section_gradient_background": ""
+      }
+    },
+    "comparison_table_section": {
+      "type": "iset-comparison-table",
+      "blocks": {
+        "row_1": {
+          "type": "row",
+          "settings": {
+            "row_label": "Root Count",
+            "row_sublabel": "",
+            "our_icon": "none",
+            "our_value": "8",
+            "comp1_icon": "x",
+            "comp1_value": "0",
+            "comp2_icon": "x",
+            "comp2_value": "0"
+          }
+        },
+        "row_2": {
+          "type": "row",
+          "settings": {
+            "row_label": "Source",
+            "row_sublabel": "",
+            "our_icon": "check",
+            "our_value": "Wildcrafted",
+            "comp1_icon": "x",
+            "comp1_value": "Lab-made",
+            "comp2_icon": "x",
+            "comp2_value": "Lab-made"
+          }
+        },
+        "row_3": {
+          "type": "row",
+          "settings": {
+            "row_label": "Fillers & Binders",
+            "row_sublabel": "",
+            "our_icon": "check",
+            "our_value": "None",
+            "comp1_icon": "x",
+            "comp1_value": "Common",
+            "comp2_icon": "x",
+            "comp2_value": "Common"
+          }
+        },
+        "row_4": {
+          "type": "row",
+          "settings": {
+            "row_label": "Caffeine",
+            "row_sublabel": "",
+            "our_icon": "none",
+            "our_value": "0mg",
+            "comp1_icon": "none",
+            "comp1_value": "Varies",
+            "comp2_icon": "x",
+            "comp2_value": "High"
+          }
+        },
+        "row_5": {
+          "type": "row",
+          "settings": {
+            "row_label": "Tradition",
+            "row_sublabel": "",
+            "our_icon": "check",
+            "our_value": "Centuries of use",
+            "comp1_icon": "x",
+            "comp1_value": "",
+            "comp2_icon": "x",
+            "comp2_value": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4",
+        "row_5"
+      ],
+      "settings": {
+        "heading": "Why Herbal Iron Capsules",
         "heading_color": "#1c2a0f",
-        "subheading": "If you want the tradition of Herbal Iron without the daily brew, this is it: the same 8 wildcrafted Jamaican roots, in a capsule you can take anywhere. For home, travel, or mornings when there's no time to brew.",
+        "subheading": "",
         "subheading_color": "#5a7040",
-        "step_num_bg": "#1c2a0f",
-        "step_num_color": "#8aab35",
+        "our_column_label": "Herbal Iron Capsules",
+        "our_column_bg": "#8aab35",
+        "our_column_text": "#000000",
+        "comp1_label": "Generic Multivitamin",
+        "comp2_label": "Synthetic Energy Pills",
+        "table_background": "#ffffff",
+        "border_color": "#4a6b1a2e",
         "background_color": "#f7f3eb",
         "padding_top": 52,
         "padding_bottom": 52
@@ -496,51 +627,6 @@
         "background_color": "#1c2a0f",
         "padding_top": 52,
         "padding_bottom": 52
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "Also Bought",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "stretch_cards": true,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "button_funcionality": "add-to-cart",
-        "button_label": "Go to product",
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 24
-      }
-    },
-    "1782428326938f39e7": {
-      "type": "apps",
-      "blocks": {
-        "loox_reviews_loox_dynamic_section_Xe7RCb": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "reviews_to_display": "",
-            "default_tab": "automatic",
-            "only_photos": false,
-            "aggregated": false,
-            "limit": 20,
-            "hide_thumbnails": false,
-            "maxwidth": 1080,
-            "is_sample": true
-          }
-        }
-      },
-      "block_order": [
-        "loox_reviews_loox_dynamic_section_Xe7RCb"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "faq_section": {
@@ -603,92 +689,49 @@
         "padding_bottom": 52
       }
     },
-    "comparison_table_section": {
-      "type": "iset-comparison-table",
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Also Bought",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "stretch_cards": true,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "button_funcionality": "add-to-cart",
+        "button_label": "Go to product",
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "1782428326938f39e7": {
+      "type": "apps",
       "blocks": {
-        "row_1": {
-          "type": "row",
+        "loox_reviews_loox_dynamic_section_Xe7RCb": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
-            "row_label": "Root Count",
-            "our_icon": "none",
-            "our_value": "8",
-            "comp1_icon": "x",
-            "comp1_value": "0",
-            "comp2_icon": "x",
-            "comp2_value": "0"
-          }
-        },
-        "row_2": {
-          "type": "row",
-          "settings": {
-            "row_label": "Source",
-            "our_icon": "check",
-            "our_value": "Wildcrafted",
-            "comp1_icon": "x",
-            "comp1_value": "Lab-made",
-            "comp2_icon": "x",
-            "comp2_value": "Lab-made"
-          }
-        },
-        "row_3": {
-          "type": "row",
-          "settings": {
-            "row_label": "Fillers & Binders",
-            "our_icon": "check",
-            "our_value": "None",
-            "comp1_icon": "x",
-            "comp1_value": "Common",
-            "comp2_icon": "x",
-            "comp2_value": "Common"
-          }
-        },
-        "row_4": {
-          "type": "row",
-          "settings": {
-            "row_label": "Caffeine",
-            "our_icon": "none",
-            "our_value": "0mg",
-            "comp1_icon": "none",
-            "comp1_value": "Varies",
-            "comp2_icon": "x",
-            "comp2_value": "High"
-          }
-        },
-        "row_5": {
-          "type": "row",
-          "settings": {
-            "row_label": "Tradition",
-            "our_icon": "check",
-            "our_value": "Centuries of use",
-            "comp1_icon": "x",
-            "comp1_value": "",
-            "comp2_icon": "x",
-            "comp2_value": ""
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
           }
         }
       },
       "block_order": [
-        "row_1",
-        "row_2",
-        "row_3",
-        "row_4",
-        "row_5"
+        "loox_reviews_loox_dynamic_section_Xe7RCb"
       ],
       "settings": {
-        "heading": "Why Herbal Iron Capsules",
-        "heading_color": "#1c2a0f",
-        "subheading": "",
-        "subheading_color": "#5a7040",
-        "our_column_label": "Herbal Iron Capsules",
-        "our_column_bg": "#8aab35",
-        "our_column_text": "#000000",
-        "comp1_label": "Generic Multivitamin",
-        "comp2_label": "Synthetic Energy Pills",
-        "table_background": "#ffffff",
-        "border_color": "#4a6b1a2e",
-        "background_color": "#f7f3eb",
-        "padding_top": 52,
-        "padding_bottom": 52
+        "include_margins": true
       }
     }
   },
@@ -697,7 +740,7 @@
     "horizontal_ticker_TgbchM",
     "rich_text_E3wPxY",
     "image_with_text_RJXTa9",
-    "why_capsules_section",
+    "image_with_text_aaPQ8P",
     "comparison_table_section",
     "guarantee_section",
     "faq_section",
