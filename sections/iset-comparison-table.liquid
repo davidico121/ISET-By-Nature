@@ -32,65 +32,132 @@
     color: {{ section.settings.subheading_color }};
     margin: 10px 0 0;
   }
+
   #shopify-section-{{ section.id }} .ip-cmp-table {
     position: relative;
     border: 1px solid {{ section.settings.border_color }};
     border-radius: 20px;
-    overflow: hidden;
     background: {{ section.settings.table_background }};
     box-shadow: 0 14px 34px rgba(28,42,15,0.08);
+    padding: 0 14px;
   }
   #shopify-section-{{ section.id }} .ip-cmp-row {
     display: grid;
     grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    position: relative;
   }
-  #shopify-section-{{ section.id }} .ip-cmp-row + .ip-cmp-row {
-    border-top: 1px solid {{ section.settings.border_color }};
+  #shopify-section-{{ section.id }} .ip-cmp-row:not(:last-child) .ip-cmp-cell:not(.ip-cmp-cell--ours) {
+    border-bottom: 1px solid {{ section.settings.border_color }};
   }
+
+  /* The floating "ours" card: overlaps the table top/bottom and sits above the row dividers */
+  #shopify-section-{{ section.id }} .ip-cmp-cell--ours {
+    background: {{ section.settings.our_column_bg }};
+    color: {{ section.settings.our_column_text }};
+    border: 2px solid {{ section.settings.heading_color }};
+    border-left: none;
+    border-right: none;
+    position: relative;
+    z-index: 2;
+  }
+  #shopify-section-{{ section.id }} .ip-cmp-row.ip-cmp-header .ip-cmp-cell--ours {
+    border-top: 2px solid {{ section.settings.heading_color }};
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -1px;
+  }
+  #shopify-section-{{ section.id }} .ip-cmp-row:last-child .ip-cmp-cell--ours {
+    border-bottom: 2px solid {{ section.settings.heading_color }};
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: -1px;
+  }
+  #shopify-section-{{ section.id }} .ip-cmp-cell--ours + .ip-cmp-row .ip-cmp-cell--ours {
+    border-top: none;
+  }
+
   #shopify-section-{{ section.id }} .ip-cmp-cell {
-    padding: 16px 14px;
+    padding: 18px 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    color: {{ section.settings.heading_color }};
+    gap: 4px;
   }
   #shopify-section-{{ section.id }} .ip-cmp-cell--label {
     align-items: flex-start;
     text-align: left;
   }
-  #shopify-section-{{ section.id }} .ip-cmp-cell--label .ip-cmp-sub {
+  #shopify-section-{{ section.id }} .ip-cmp-label-main {
+    font-size: 14px;
+    font-weight: 800;
+    color: {{ section.settings.heading_color }};
+  }
+  #shopify-section-{{ section.id }} .ip-cmp-label-sub {
     font-weight: 500;
     font-size: 11px;
     color: {{ section.settings.subheading_color }};
-    margin-top: 2px;
   }
-  #shopify-section-{{ section.id }} .ip-cmp-cell--ours {
-    background: {{ section.settings.our_column_bg }};
-    color: {{ section.settings.our_column_text }};
-    font-weight: 800;
-  }
-  #shopify-section-{{ section.id }} .ip-cmp-header .ip-cmp-cell--ours {
+
+  #shopify-section-{{ section.id }} .ip-cmp-row.ip-cmp-header .ip-cmp-cell--ours {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 900;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
-  #shopify-section-{{ section.id }} .ip-cmp-header .ip-cmp-cell {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  #shopify-section-{{ section.id }} .ip-cmp-row.ip-cmp-header .ip-cmp-cell:not(.ip-cmp-cell--ours):not(.ip-cmp-cell--label) {
+    font-size: 13px;
+    font-weight: 700;
+    color: {{ section.settings.heading_color }};
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
+
+  #shopify-section-{{ section.id }} .ip-cmp-value-large {
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  #shopify-section-{{ section.id }} .ip-cmp-badge {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 900;
+    background: {{ section.settings.heading_color }};
+    color: {{ section.settings.table_background }};
+  }
+  #shopify-section-{{ section.id }} .ip-cmp-badge--x {
+    background: {{ section.settings.heading_color }};
+  }
+
   @media screen and (max-width: 600px) {
     #shopify-section-{{ section.id }} .ip-cmp-row {
       grid-template-columns: 1fr 0.8fr 0.8fr 0.8fr;
     }
     #shopify-section-{{ section.id }} .ip-cmp-cell {
-      padding: 12px 8px;
+      padding: 12px 6px;
+    }
+    #shopify-section-{{ section.id }} .ip-cmp-label-main {
       font-size: 12px;
     }
-    #shopify-section-{{ section.id }} .ip-cmp-header .ip-cmp-cell--ours {
-      font-size: 13px;
+    #shopify-section-{{ section.id }} .ip-cmp-row.ip-cmp-header .ip-cmp-cell--ours {
+      font-size: 15px;
+    }
+    #shopify-section-{{ section.id }} .ip-cmp-value-large {
+      font-size: 15px;
+    }
+    #shopify-section-{{ section.id }} .ip-cmp-badge {
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      font-size: 12px;
     }
   }
 </style>
@@ -117,11 +184,42 @@
       {%- for block in section.blocks -%}
         <div class="ip-cmp-row" {{ block.shopify_attributes }}>
           <div class="ip-cmp-cell ip-cmp-cell--label">
-            {{ block.settings.row_label | escape }}
+            <span class="ip-cmp-label-main">{{ block.settings.row_label | escape }}</span>
+            {%- if block.settings.row_sublabel != blank -%}
+              <span class="ip-cmp-label-sub">{{ block.settings.row_sublabel | escape }}</span>
+            {%- endif -%}
           </div>
-          <div class="ip-cmp-cell ip-cmp-cell--ours">{{ block.settings.our_value | escape }}</div>
-          <div class="ip-cmp-cell">{{ block.settings.comp1_value | escape }}</div>
-          <div class="ip-cmp-cell">{{ block.settings.comp2_value | escape }}</div>
+
+          <div class="ip-cmp-cell ip-cmp-cell--ours">
+            {%- if block.settings.our_icon == 'check' -%}
+              <span class="ip-cmp-value-large">&#10003;</span>
+            {%- endif -%}
+            {%- if block.settings.our_value != blank -%}
+              <span class="ip-cmp-value-large">{{ block.settings.our_value | escape }}</span>
+            {%- endif -%}
+          </div>
+
+          <div class="ip-cmp-cell">
+            {%- if block.settings.comp1_icon == 'check' -%}
+              <span class="ip-cmp-badge">&#10003;</span>
+            {%- elsif block.settings.comp1_icon == 'x' -%}
+              <span class="ip-cmp-badge ip-cmp-badge--x">&#10005;</span>
+            {%- endif -%}
+            {%- if block.settings.comp1_value != blank -%}
+              <span>{{ block.settings.comp1_value | escape }}</span>
+            {%- endif -%}
+          </div>
+
+          <div class="ip-cmp-cell">
+            {%- if block.settings.comp2_icon == 'check' -%}
+              <span class="ip-cmp-badge">&#10003;</span>
+            {%- elsif block.settings.comp2_icon == 'x' -%}
+              <span class="ip-cmp-badge ip-cmp-badge--x">&#10005;</span>
+            {%- endif -%}
+            {%- if block.settings.comp2_value != blank -%}
+              <span>{{ block.settings.comp2_value | escape }}</span>
+            {%- endif -%}
+          </div>
         </div>
       {%- endfor -%}
     </div>
@@ -141,7 +239,7 @@
     {
       "type": "color",
       "id": "heading_color",
-      "label": "Heading / label color",
+      "label": "Heading / label / border color",
       "default": "#1c2a0f"
     },
     {
@@ -152,7 +250,7 @@
     {
       "type": "color",
       "id": "subheading_color",
-      "label": "Subheading color",
+      "label": "Subheading / caption color",
       "default": "#5a7040"
     },
     {
@@ -169,13 +267,13 @@
       "type": "color",
       "id": "our_column_bg",
       "label": "Our column background",
-      "default": "#1c2a0f"
+      "default": "#8aab35"
     },
     {
       "type": "color",
       "id": "our_column_text",
       "label": "Our column text color",
-      "default": "#8aab35"
+      "default": "#000000"
     },
     {
       "type": "text",
@@ -202,7 +300,7 @@
     {
       "type": "color",
       "id": "border_color",
-      "label": "Divider color",
+      "label": "Row divider color",
       "default": "#4a6b1a2e"
     },
     {
@@ -249,21 +347,68 @@
         },
         {
           "type": "text",
+          "id": "row_sublabel",
+          "label": "Row sublabel (optional caption)"
+        },
+        {
+          "type": "header",
+          "content": "Our column"
+        },
+        {
+          "type": "select",
+          "id": "our_icon",
+          "label": "Show checkmark",
+          "options": [
+            { "value": "none", "label": "No icon" },
+            { "value": "check", "label": "Checkmark" }
+          ],
+          "default": "check"
+        },
+        {
+          "type": "text",
           "id": "our_value",
           "label": "Our value",
-          "default": "✓"
+          "info": "Shown large and bold. Leave blank to show just the checkmark."
+        },
+        {
+          "type": "header",
+          "content": "Comparison column 1"
+        },
+        {
+          "type": "select",
+          "id": "comp1_icon",
+          "label": "Icon",
+          "options": [
+            { "value": "none", "label": "No icon" },
+            { "value": "check", "label": "Checkmark" },
+            { "value": "x", "label": "X mark" }
+          ],
+          "default": "x"
         },
         {
           "type": "text",
           "id": "comp1_value",
-          "label": "Comparison 1 value",
-          "default": "✗"
+          "label": "Value (text, optional)"
+        },
+        {
+          "type": "header",
+          "content": "Comparison column 2"
+        },
+        {
+          "type": "select",
+          "id": "comp2_icon",
+          "label": "Icon",
+          "options": [
+            { "value": "none", "label": "No icon" },
+            { "value": "check", "label": "Checkmark" },
+            { "value": "x", "label": "X mark" }
+          ],
+          "default": "x"
         },
         {
           "type": "text",
           "id": "comp2_value",
-          "label": "Comparison 2 value",
-          "default": "✗"
+          "label": "Value (text, optional)"
         }
       ]
     }

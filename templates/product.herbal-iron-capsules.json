@@ -610,45 +610,60 @@
           "type": "row",
           "settings": {
             "row_label": "Root Count",
-            "our_value": "✓ 8 wildcrafted roots",
-            "comp1_value": "✗ 0",
-            "comp2_value": "✗ 0"
+            "our_icon": "none",
+            "our_value": "8",
+            "comp1_icon": "x",
+            "comp1_value": "0",
+            "comp2_icon": "x",
+            "comp2_value": "0"
           }
         },
         "row_2": {
           "type": "row",
           "settings": {
             "row_label": "Source",
-            "our_value": "✓ Wildcrafted",
-            "comp1_value": "✗ Lab-made",
-            "comp2_value": "✗ Lab-made"
+            "our_icon": "check",
+            "our_value": "Wildcrafted",
+            "comp1_icon": "x",
+            "comp1_value": "Lab-made",
+            "comp2_icon": "x",
+            "comp2_value": "Lab-made"
           }
         },
         "row_3": {
           "type": "row",
           "settings": {
             "row_label": "Fillers & Binders",
-            "our_value": "✓ None",
-            "comp1_value": "✗ Common",
-            "comp2_value": "✗ Common"
+            "our_icon": "check",
+            "our_value": "None",
+            "comp1_icon": "x",
+            "comp1_value": "Common",
+            "comp2_icon": "x",
+            "comp2_value": "Common"
           }
         },
         "row_4": {
           "type": "row",
           "settings": {
             "row_label": "Caffeine",
-            "our_value": "✓ 0mg",
+            "our_icon": "none",
+            "our_value": "0mg",
+            "comp1_icon": "none",
             "comp1_value": "Varies",
-            "comp2_value": "✗ High"
+            "comp2_icon": "x",
+            "comp2_value": "High"
           }
         },
         "row_5": {
           "type": "row",
           "settings": {
             "row_label": "Tradition",
-            "our_value": "✓ Centuries of use",
-            "comp1_value": "✗ None",
-            "comp2_value": "✗ None"
+            "our_icon": "check",
+            "our_value": "Centuries of use",
+            "comp1_icon": "x",
+            "comp1_value": "",
+            "comp2_icon": "x",
+            "comp2_value": ""
           }
         }
       },
