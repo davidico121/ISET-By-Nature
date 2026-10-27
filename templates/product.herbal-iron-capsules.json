@@ -759,7 +759,9 @@
             "image": "",
             "name": "Sarsaparilla Root",
             "scientific_name": "Smilax regelii",
-            "description": "A root long used in Jamaican herbal tradition to support stamina and vitality."
+            "description": "A root long used in Jamaican herbal tradition to support stamina and vitality.",
+            "key_features_heading": "Key Features:",
+            "key_features": "A root long used across Caribbean herbal tradition as a daily tonic.\nOften brewed as part of a blend believed to support stamina.\nValued for its earthy, slightly bitter character in traditional tonics."
           }
         },
         "root_02": {
@@ -768,7 +770,9 @@
             "image": "",
             "name": "Chaney Root",
             "scientific_name": "Smilax balbisiana",
-            "description": "Traditionally brewed for its reputation as an everyday vitality tonic."
+            "description": "Traditionally brewed for its reputation as an everyday vitality tonic.",
+            "key_features_heading": "Key Features:",
+            "key_features": "A Jamaican bush tea staple passed down through generations.\nTraditionally paired with other roots to round out a tonic's flavor.\nKnown locally simply as a \"strengthening\" root."
           }
         },
         "root_03": {
@@ -777,7 +781,9 @@
             "image": "",
             "name": "Strongback",
             "scientific_name": "Morinda royoc",
-            "description": "Named for its traditional use supporting strength and endurance."
+            "description": "Named for its traditional use supporting strength and endurance.",
+            "key_features_heading": "Key Features:",
+            "key_features": "Named for its traditional reputation supporting strength and endurance.\nA fixture in Caribbean root tonics for generations.\nOften included alongside other roots in traditional blends."
           }
         },
         "root_04": {
@@ -786,7 +792,9 @@
             "image": "",
             "name": "Jolt of Strength",
             "scientific_name": "Pithecoctenium echinatum",
-            "description": "A root prized in traditional preparations for a natural energizing lift."
+            "description": "A root prized in traditional preparations for a natural energizing lift.",
+            "key_features_heading": "Key Features:",
+            "key_features": "Prized in traditional preparations for a natural, energizing lift.\nCommonly brewed as part of a daily root tonic.\nCarries a distinct, robust character in traditional recipes."
           }
         },
         "root_05": {
@@ -795,7 +803,9 @@
             "image": "",
             "name": "Ramoon Bark",
             "scientific_name": "Trophis racemosa",
-            "description": "Used traditionally as part of a daily wellness tonic."
+            "description": "Used traditionally as part of a daily wellness tonic.",
+            "key_features_heading": "Key Features:",
+            "key_features": "Used traditionally as part of a daily wellness tonic.\nSourced from bark rather than root, adding body to the blend.\nA long-standing ingredient in Caribbean herbal preparations."
           }
         },
         "root_06": {
@@ -804,7 +814,9 @@
             "image": "",
             "name": "Puron Bark",
             "scientific_name": "Prunus occidentalis",
-            "description": "A traditional ingredient valued for its grounding, nourishing qualities."
+            "description": "A traditional ingredient valued for its grounding, nourishing qualities.",
+            "key_features_heading": "Key Features:",
+            "key_features": "A traditional ingredient valued for its grounding, nourishing qualities.\nContributes a smooth, mellow note to root tonic blends.\nHarvested as bark, used alongside root ingredients in tradition."
           }
         },
         "root_07": {
@@ -813,7 +825,9 @@
             "image": "",
             "name": "Blue Vervain Root",
             "scientific_name": "Stachytarpheta jamaicensis",
-            "description": "Traditionally used to support calm and balance."
+            "description": "Traditionally used to support calm and balance.",
+            "key_features_heading": "Key Features:",
+            "key_features": "Traditionally used to support calm and balance.\nA well-known bush medicine plant across the Caribbean.\nOften brewed on its own or blended into root tonics."
           }
         },
         "root_08": {
@@ -822,7 +836,9 @@
             "image": "",
             "name": "Four Man Strength",
             "scientific_name": "",
-            "description": "Named for its traditional reputation as a potent tonic root."
+            "description": "Named for its traditional reputation as a potent tonic root.",
+            "key_features_heading": "Key Features:",
+            "key_features": "Named for its traditional reputation as a potent tonic root.\nA staple in traditional root tonic recipes for generations.\nPassed down as part of time-honored herbal blending practice."
           }
         }
       },
@@ -838,8 +854,8 @@
       ],
       "settings": {
         "heading": "What's actually in it",
-        "subheading": "Eight wildcrafted roots, each with centuries of Jamaican herbal tradition behind it.",
         "heading_color": "#1c2a0f",
+        "subheading": "Eight wildcrafted roots, each with centuries of Jamaican herbal tradition behind it.",
         "subheading_color": "#5a7040",
         "active_color": "#4a6b1a",
         "border_color": "#4a6b1a2e",

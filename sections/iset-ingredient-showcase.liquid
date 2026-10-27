@@ -143,13 +143,39 @@
     transition: max-height 0.3s ease;
   }
   #shopify-section-{{ section.id }} .ip-ingr-item.is-open .ip-ingr-panel {
-    max-height: 240px;
+    max-height: 520px;
   }
   #shopify-section-{{ section.id }} .ip-ingr-panel-inner {
     padding: 0 4px 22px;
     font-size: 15px;
     line-height: 1.6;
     color: {{ section.settings.subheading_color }};
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-features {
+    background: {{ section.settings.features_bg }};
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-top: 16px;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-features-heading {
+    font-size: 14px;
+    font-weight: 800;
+    color: {{ section.settings.heading_color }};
+    margin: 0 0 10px;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-features-list {
+    margin: 0;
+    padding: 0 0 0 18px;
+    list-style: disc;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-features-list li {
+    font-size: 14px;
+    line-height: 1.55;
+    color: {{ section.settings.subheading_color }};
+    margin: 0 0 8px;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-features-list li:last-child {
+    margin-bottom: 0;
   }
   #shopify-section-{{ section.id }} .ip-ingr-mobile-media {
     display: none;
@@ -175,7 +201,7 @@
       position: absolute;
     }
     #shopify-section-{{ section.id }} .ip-ingr-item.is-open .ip-ingr-panel {
-      max-height: 420px;
+      max-height: 760px;
     }
   }
 </style>
@@ -222,6 +248,22 @@
               <div class="ip-ingr-panel-inner">
                 {%- if block.settings.description != blank -%}
                   <p>{{ block.settings.description | escape }}</p>
+                {%- endif -%}
+                {%- if block.settings.key_features != blank -%}
+                  <div class="ip-ingr-features">
+                    {%- if block.settings.key_features_heading != blank -%}
+                      <p class="ip-ingr-features-heading">{{ block.settings.key_features_heading | escape }}</p>
+                    {%- endif -%}
+                    <ul class="ip-ingr-features-list">
+                      {%- assign feature_lines = block.settings.key_features | newline_to_br | split: '<br />' -%}
+                      {%- for line in feature_lines -%}
+                        {%- assign trimmed_line = line | strip -%}
+                        {%- if trimmed_line != blank -%}
+                          <li>{{ trimmed_line | escape }}</li>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </ul>
+                  </div>
                 {%- endif -%}
                 <div class="ip-ingr-mobile-media">
                   {%- if block.settings.image != blank -%}
@@ -326,6 +368,12 @@
       "default": "#4a6b1a2e"
     },
     {
+      "type": "color",
+      "id": "features_bg",
+      "label": "Key features box background",
+      "default": "#f4f4f4"
+    },
+    {
       "type": "header",
       "content": "Image"
     },
@@ -414,6 +462,18 @@
           "id": "description",
           "label": "Description",
           "default": "What this root is traditionally used for."
+        },
+        {
+          "type": "text",
+          "id": "key_features_heading",
+          "label": "Key features heading",
+          "default": "Key Features:"
+        },
+        {
+          "type": "textarea",
+          "id": "key_features",
+          "label": "Key features (one per line)",
+          "info": "Each line becomes a bullet point. Leave blank to hide the box."
         }
       ]
     }
