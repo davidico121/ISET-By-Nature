@@ -554,7 +554,7 @@
           "type": "row",
           "settings": {
             "row_label": "Root Count",
-            "our_icon": "none",
+            "our_icon": "check",
             "our_value": "6",
             "comp1_icon": "x",
             "comp1_value": "0",
@@ -590,9 +590,9 @@
           "type": "row",
           "settings": {
             "row_label": "Caffeine",
-            "our_icon": "none",
+            "our_icon": "check",
             "our_value": "0mg",
-            "comp1_icon": "none",
+            "comp1_icon": "x",
             "comp1_value": "Varies",
             "comp2_icon": "x",
             "comp2_value": "High"
@@ -605,9 +605,9 @@
             "our_icon": "check",
             "our_value": "Centuries of use",
             "comp1_icon": "x",
-            "comp1_value": "",
+            "comp1_value": "None",
             "comp2_icon": "x",
-            "comp2_value": ""
+            "comp2_value": "None"
           }
         }
       },
@@ -637,7 +637,11 @@
         "border_color": "#ececea",
         "background_color": "#f7f3eb",
         "padding_top": 52,
-        "padding_bottom": 52
+        "padding_bottom": 52,
+        "show_badge": true,
+        "badge_text": "Our Pick",
+        "badge_bg_color": "#4a6b1a",
+        "badge_text_color": "#f5f0e8"
       }
     },
     "guarantee_section": {
