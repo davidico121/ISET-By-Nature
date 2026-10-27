@@ -33,6 +33,7 @@
     margin: 10px 0 0;
   }
 
+  /* Mobile-first base: these sizes apply to small screens by default. */
   #shopify-section-{{ section.id }} .ip-cmp-table {
     position: relative;
     border: 1px solid {{ section.settings.border_color }};
@@ -42,7 +43,7 @@
   }
   #shopify-section-{{ section.id }} .ip-cmp-row {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.95fr 0.95fr 0.95fr;
   }
   #shopify-section-{{ section.id }} .ip-cmp-row:not(:last-child) {
     border-bottom: 1px solid {{ section.settings.border_color }};
@@ -53,19 +54,19 @@
   }
 
   #shopify-section-{{ section.id }} .ip-cmp-cell {
-    min-height: 68px;
-    padding: 14px 10px;
+    min-height: 66px;
+    padding: 12px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 4px;
+    gap: 5px;
   }
   #shopify-section-{{ section.id }} .ip-cmp-cell--label {
     align-items: flex-start;
     text-align: left;
-    padding-left: 24px;
+    padding-left: 16px;
   }
   #shopify-section-{{ section.id }} .ip-cmp-label-main {
     font-size: 14px;
@@ -75,19 +76,22 @@
   }
 
   #shopify-section-{{ section.id }} .ip-cmp-col-icon {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     margin-bottom: 4px;
   }
   #shopify-section-{{ section.id }} .ip-cmp-header .ip-cmp-cell {
-    padding-top: 20px;
-    padding-bottom: 18px;
+    padding-top: 18px;
+    padding-bottom: 16px;
   }
   #shopify-section-{{ section.id }} .ip-cmp-col-label {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
+    line-height: 1.25;
     color: {{ section.settings.heading_color }};
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
   #shopify-section-{{ section.id }} .ip-cmp-header .ip-cmp-cell--ours .ip-cmp-col-label {
     font-weight: 800;
@@ -98,20 +102,21 @@
   }
 
   #shopify-section-{{ section.id }} .ip-cmp-value {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
+    line-height: 1.3;
     color: {{ section.settings.heading_color }};
   }
 
   #shopify-section-{{ section.id }} .ip-cmp-badge {
-    width: 28px;
-    height: 28px;
-    min-width: 28px;
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
     border-radius: 999px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 900;
   }
   #shopify-section-{{ section.id }} .ip-cmp-badge--check {
@@ -123,31 +128,42 @@
     color: {{ section.settings.x_badge_icon_color }};
   }
 
-  @media screen and (max-width: 600px) {
+  /* Desktop / larger screens: scale everything up for legibility. */
+  @media screen and (min-width: 601px) {
     #shopify-section-{{ section.id }} .ip-cmp-row {
-      grid-template-columns: 1fr 0.8fr 0.8fr 0.8fr;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr;
     }
     #shopify-section-{{ section.id }} .ip-cmp-cell {
-      min-height: 60px;
-      padding: 10px 6px;
+      min-height: 76px;
+      padding: 18px 14px;
+      gap: 6px;
     }
     #shopify-section-{{ section.id }} .ip-cmp-cell--label {
-      padding-left: 14px;
+      padding-left: 24px;
     }
-    #shopify-section-{{ section.id }} .ip-cmp-label-main,
-    #shopify-section-{{ section.id }} .ip-cmp-col-label,
-    #shopify-section-{{ section.id }} .ip-cmp-value {
-      font-size: 12px;
+    #shopify-section-{{ section.id }} .ip-cmp-label-main {
+      font-size: 18px;
     }
     #shopify-section-{{ section.id }} .ip-cmp-col-icon {
-      width: 26px;
-      height: 26px;
+      width: 36px;
+      height: 36px;
+    }
+    #shopify-section-{{ section.id }} .ip-cmp-header .ip-cmp-cell {
+      padding-top: 26px;
+      padding-bottom: 22px;
+    }
+    #shopify-section-{{ section.id }} .ip-cmp-col-label {
+      font-size: 17px;
+      line-height: 1.3;
+    }
+    #shopify-section-{{ section.id }} .ip-cmp-value {
+      font-size: 18px;
     }
     #shopify-section-{{ section.id }} .ip-cmp-badge {
-      width: 22px;
-      height: 22px;
-      min-width: 22px;
-      font-size: 11px;
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      font-size: 15px;
     }
   }
 </style>
