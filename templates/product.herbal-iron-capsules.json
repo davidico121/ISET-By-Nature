@@ -530,7 +530,6 @@
           "type": "row",
           "settings": {
             "row_label": "Root Count",
-            "row_sublabel": "",
             "our_icon": "none",
             "our_value": "8",
             "comp1_icon": "x",
@@ -543,7 +542,6 @@
           "type": "row",
           "settings": {
             "row_label": "Source",
-            "row_sublabel": "",
             "our_icon": "check",
             "our_value": "Wildcrafted",
             "comp1_icon": "x",
@@ -556,7 +554,6 @@
           "type": "row",
           "settings": {
             "row_label": "Fillers & Binders",
-            "row_sublabel": "",
             "our_icon": "check",
             "our_value": "None",
             "comp1_icon": "x",
@@ -569,7 +566,6 @@
           "type": "row",
           "settings": {
             "row_label": "Caffeine",
-            "row_sublabel": "",
             "our_icon": "none",
             "our_value": "0mg",
             "comp1_icon": "none",
@@ -582,7 +578,6 @@
           "type": "row",
           "settings": {
             "row_label": "Tradition",
-            "row_sublabel": "",
             "our_icon": "check",
             "our_value": "Centuries of use",
             "comp1_icon": "x",
@@ -604,13 +599,18 @@
         "heading_color": "#1c2a0f",
         "subheading": "",
         "subheading_color": "#5a7040",
-        "our_column_label": "Herbal Iron Capsules",
-        "our_column_bg": "#8aab35",
-        "our_column_text": "#000000",
+        "our_column_label": "HERBAL IRON",
+        "our_column_image": "",
+        "our_column_bg": "#f7f7f5",
         "comp1_label": "Generic Multivitamin",
+        "comp1_image": "",
         "comp2_label": "Synthetic Energy Pills",
+        "comp2_image": "",
+        "check_badge_color": "#a3d23c",
+        "x_badge_color": "#e3e3e0",
+        "x_badge_icon_color": "#9a9a95",
         "table_background": "#ffffff",
-        "border_color": "#4a6b1a2e",
+        "border_color": "#ececea",
         "background_color": "#f7f3eb",
         "padding_top": 52,
         "padding_bottom": 52
