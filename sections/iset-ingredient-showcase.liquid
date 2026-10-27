@@ -1,0 +1,432 @@
+{% comment %}
+  ISET by Nature: Ingredient deep-dive showcase (accordion list + per-row image swap).
+  Click a root to expand its description and swap the image on the right, matching
+  index between the clicked item and its image via data-index. Custom section,
+  fully schema-driven (blocks) so every root/image/description stays editable.
+{% endcomment %}
+
+<style>
+  #shopify-section-{{ section.id }} .ip-ingr {
+    background: {{ section.settings.background_color }};
+    font-family: var(--font-body-family);
+  }
+  #shopify-section-{{ section.id }} .ip-wrap {
+    width: min(1140px, calc(100% - 28px));
+    margin: 0 auto;
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+  #shopify-section-{{ section.id }} .ip-head {
+    max-width: 640px;
+    margin: 0 auto 36px;
+    text-align: center;
+  }
+  #shopify-section-{{ section.id }} .ip-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(26px, 3.8vw, 42px);
+    line-height: 1.08;
+    font-weight: 900;
+    margin: 0;
+    color: {{ section.settings.heading_color }};
+  }
+  #shopify-section-{{ section.id }} .ip-sub {
+    font-size: 16px;
+    line-height: 1.6;
+    color: {{ section.settings.subheading_color }};
+    margin: 12px 0 0;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-media {
+    position: sticky;
+    top: 24px;
+    border-radius: {{ section.settings.image_radius }}px;
+    overflow: hidden;
+    aspect-ratio: {{ section.settings.image_aspect_ratio }};
+    background: {{ section.settings.image_placeholder_bg }};
+    border: 1px solid rgba(74,107,26,0.18);
+    box-shadow: 0 14px 34px rgba(28,42,15,0.08);
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-image.is-active {
+    opacity: 1;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 54px;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-list {
+    border-top: 1px solid {{ section.settings.border_color }};
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-item {
+    border-bottom: 1px solid {{ section.settings.border_color }};
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-trigger {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 20px 4px;
+    font-family: inherit;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-trigger-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: {{ section.settings.heading_color }};
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-sci {
+    font-size: 13px;
+    font-style: italic;
+    color: {{ section.settings.subheading_color }};
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-icon {
+    flex: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    border: 1px solid {{ section.settings.border_color }};
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-icon::before,
+  #shopify-section-{{ section.id }} .ip-ingr-icon::after {
+    content: '';
+    position: absolute;
+    background: {{ section.settings.heading_color }};
+    transition: transform 0.25s ease;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-icon::before {
+    width: 12px;
+    height: 1.5px;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-icon::after {
+    width: 1.5px;
+    height: 12px;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-item.is-open .ip-ingr-icon::after {
+    transform: rotate(90deg) scaleY(0);
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-item.is-open .ip-ingr-name {
+    color: {{ section.settings.active_color }};
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-item.is-open .ip-ingr-panel {
+    max-height: 240px;
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-panel-inner {
+    padding: 0 4px 22px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: {{ section.settings.subheading_color }};
+  }
+  #shopify-section-{{ section.id }} .ip-ingr-mobile-media {
+    display: none;
+  }
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .ip-ingr-grid {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    #shopify-section-{{ section.id }} .ip-ingr-media {
+      display: none;
+    }
+    #shopify-section-{{ section.id }} .ip-ingr-mobile-media {
+      display: block;
+      position: relative;
+      border-radius: {{ section.settings.image_radius }}px;
+      overflow: hidden;
+      aspect-ratio: {{ section.settings.image_aspect_ratio }};
+      background: {{ section.settings.image_placeholder_bg }};
+      margin-top: 14px;
+    }
+    #shopify-section-{{ section.id }} .ip-ingr-mobile-media .ip-ingr-image {
+      position: absolute;
+    }
+    #shopify-section-{{ section.id }} .ip-ingr-item.is-open .ip-ingr-panel {
+      max-height: 420px;
+    }
+  }
+</style>
+
+<div class="ip-ingr">
+  <div class="ip-wrap">
+    {%- if section.settings.heading != blank or section.settings.subheading != blank -%}
+      <div class="ip-head">
+        {%- if section.settings.heading != blank -%}
+          <h2 class="ip-title">{{ section.settings.heading | escape }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <p class="ip-sub">{{ section.settings.subheading | escape }}</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="ip-ingr-grid" data-ingr-accordion>
+      <div class="ip-ingr-media">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '50vw', class: 'ip-ingr-image', data-index: forloop.index0 }}
+          {%- else -%}
+            <div class="ip-ingr-placeholder ip-ingr-image" data-index="{{ forloop.index0 }}">🌿</div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="ip-ingr-list">
+        {%- for block in section.blocks -%}
+          <div class="ip-ingr-item" data-ingr-item data-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+            <button type="button" class="ip-ingr-trigger" aria-expanded="false">
+              <span class="ip-ingr-trigger-text">
+                {%- if block.settings.name != blank -%}
+                  <span class="ip-ingr-name">{{ block.settings.name | escape }}</span>
+                {%- endif -%}
+                {%- if block.settings.scientific_name != blank -%}
+                  <span class="ip-ingr-sci">{{ block.settings.scientific_name | escape }}</span>
+                {%- endif -%}
+              </span>
+              <span class="ip-ingr-icon" aria-hidden="true"></span>
+            </button>
+            <div class="ip-ingr-panel">
+              <div class="ip-ingr-panel-inner">
+                {%- if block.settings.description != blank -%}
+                  <p>{{ block.settings.description | escape }}</p>
+                {%- endif -%}
+                <div class="ip-ingr-mobile-media">
+                  {%- if block.settings.image != blank -%}
+                    {{ block.settings.image | image_url: width: 900 | image_tag: loading: 'lazy', sizes: '90vw', class: 'ip-ingr-image is-active' }}
+                  {%- else -%}
+                    <div class="ip-ingr-placeholder">🌿</div>
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    var section = document.getElementById('shopify-section-{{ section.id }}');
+    if (!section) return;
+    var accordion = section.querySelector('[data-ingr-accordion]');
+    if (!accordion) return;
+    var desktopImages = section.querySelectorAll('.ip-ingr-media .ip-ingr-image');
+
+    function activateItem(item) {
+      var wasOpen = item.classList.contains('is-open');
+
+      var items = accordion.querySelectorAll('[data-ingr-item]');
+      for (var i = 0; i < items.length; i++) {
+        items[i].classList.remove('is-open');
+        items[i].querySelector('.ip-ingr-trigger').setAttribute('aria-expanded', 'false');
+      }
+      for (var j = 0; j < desktopImages.length; j++) {
+        desktopImages[j].classList.remove('is-active');
+      }
+
+      if (!wasOpen) {
+        item.classList.add('is-open');
+        item.querySelector('.ip-ingr-trigger').setAttribute('aria-expanded', 'true');
+        var index = item.getAttribute('data-index');
+        var activeImage = section.querySelector('.ip-ingr-media .ip-ingr-image[data-index="' + index + '"]');
+        if (activeImage) activeImage.classList.add('is-active');
+      } else {
+        var firstImage = section.querySelector('.ip-ingr-media .ip-ingr-image[data-index="0"]');
+        if (firstImage) firstImage.classList.add('is-active');
+      }
+    }
+
+    var allItems = accordion.querySelectorAll('[data-ingr-item]');
+    for (var k = 0; k < allItems.length; k++) {
+      (function(item) {
+        item.querySelector('.ip-ingr-trigger').addEventListener('click', function() {
+          activateItem(item);
+        });
+      })(allItems[k]);
+    }
+
+    var firstItem = accordion.querySelector('[data-ingr-item]');
+    if (firstItem) activateItem(firstItem);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "ISET Ingredient Showcase",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What's actually in it"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading / name color",
+      "default": "#1c2a0f"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Eight wildcrafted roots, each with centuries of tradition behind it."
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading / body text color",
+      "default": "#5a7040"
+    },
+    {
+      "type": "color",
+      "id": "active_color",
+      "label": "Active root name color",
+      "default": "#4a6b1a"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Divider color",
+      "default": "#4a6b1a2e"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "options": [
+        { "value": "1/1", "label": "Square" },
+        { "value": "4/5", "label": "Portrait" },
+        { "value": "3/4", "label": "Portrait (tall)" },
+        { "value": "4/3", "label": "Landscape" }
+      ],
+      "default": "4/5"
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "label": "Image corner radius",
+      "min": 0,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "image_placeholder_bg",
+      "label": "Image placeholder background",
+      "default": "#eef6d8"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "root",
+      "name": "Root",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Root name",
+          "default": "Root name"
+        },
+        {
+          "type": "text",
+          "id": "scientific_name",
+          "label": "Scientific name"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "What this root is traditionally used for."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ISET Ingredient Showcase",
+      "blocks": [
+        { "type": "root" },
+        { "type": "root" },
+        { "type": "root" }
+      ]
+    }
+  ]
+}
+{% endschema %}

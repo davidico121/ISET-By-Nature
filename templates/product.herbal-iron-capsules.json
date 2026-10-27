@@ -152,7 +152,7 @@
         "custom_liquid_BRXWQV": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% comment %}\n  ISET by Nature: Social Proof Badge\n  Shows the live rating and review count. Update the numbers below if they change.\n{% endcomment %}\n\n<div style=\"\n  width: 100%;\n  max-width: 620px;\n  background: #eef6d8;\n  border: 2px solid #4a6b1a;\n  border-radius: 999px;\n  padding: 12px 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 8px;\n  font-family: Inter, Arial, sans-serif;\n  box-sizing: border-box;\n\">\n  <span style=\"color:#4a6b1a;font-size:16px;letter-spacing:1px;\">★★★★★</span>\n  <span style=\"color:#1c2a0f;font-size:13px;font-weight:700;\">{{ product.metafields.loox.num_reviews | default: 25 }} Reviews</span>\n</div>"
+            "custom_liquid": "{% comment %}\n  ISET by Nature: Social Proof Badge\n  Shows the live rating and review count. Update the numbers below if they change.\n{% endcomment %}\n\n<div style=\"\n  width: 100%;\n  max-width: 620px;\n  background: #eef6d8;\n  border: 2px solid #4a6b1a;\n  border-radius: 999px;\n  padding: 12px 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 8px;\n  font-family: Inter, Arial, sans-serif;\n  box-sizing: border-box;\n\">\n  <span style=\"color:#4a6b1a;font-size:16px;letter-spacing:1px;\">\u2605\u2605\u2605\u2605\u2605</span>\n  <span style=\"color:#1c2a0f;font-size:13px;font-weight:700;\">{{ product.metafields.loox.num_reviews | default: 25 }} Reviews</span>\n</div>"
           }
         },
         "collapsible_tab_jfph3D": {
@@ -194,7 +194,7 @@
             "collapse_icon": "plus",
             "display_top_border": true,
             "open": false,
-            "content": "<p>Take 2–3 capsules each morning upon waking, with water. One bottle lasts about a month at the recommended dose. Best taken at the same time each day.</p>",
+            "content": "<p>Take 2\u20133 capsules each morning upon waking, with water. One bottle lasts about a month at the recommended dose. Best taken at the same time each day.</p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -344,25 +344,25 @@
         "text_dYUwB4": {
           "type": "text",
           "settings": {
-            "title": "🌿 100% Wildcrafted from Jamaica"
+            "title": "\ud83c\udf3f 100% Wildcrafted from Jamaica"
           }
         },
         "text_BQnmnc": {
           "type": "text",
           "settings": {
-            "title": "🌱 8 Wildcrafted Roots"
+            "title": "\ud83c\udf31 8 Wildcrafted Roots"
           }
         },
         "text_awPYzR": {
           "type": "text",
           "settings": {
-            "title": "💚 No Fillers. No Additives."
+            "title": "\ud83d\udc9a No Fillers. No Additives."
           }
         },
         "text_GNmmyA": {
           "type": "text",
           "settings": {
-            "title": "🌱 Nature's Herbs"
+            "title": "\ud83c\udf31 Nature's Herbs"
           }
         }
       },
@@ -635,7 +635,7 @@
     "guarantee_section": {
       "type": "iset-guarantee",
       "settings": {
-        "icon": "🛡️",
+        "icon": "\ud83d\udee1\ufe0f",
         "heading": "Built for the long run, not the quick fix.",
         "heading_color": "#f5f0e8",
         "body": "Real roots don't work like a stimulant. Take Herbal Iron Capsules daily, the way it's traditionally made: a tonic, not a shortcut. Results vary from person to person.",
@@ -652,21 +652,21 @@
           "type": "qa",
           "settings": {
             "question": "Is this really wildcrafted from Jamaica?",
-            "answer": "<p>Yes — every herb is handpicked from Jamaican soil. Never farmed, never synthetic. We work directly with Jamaican harvesters to ensure quality and authenticity at the source.</p>"
+            "answer": "<p>Yes \u2014 every herb is handpicked from Jamaican soil. Never farmed, never synthetic. We work directly with Jamaican harvesters to ensure quality and authenticity at the source.</p>"
           }
         },
         "qa_2": {
           "type": "qa",
           "settings": {
             "question": "How long until I feel a difference?",
-            "answer": "<p>Most customers notice changes within 7–14 days of consistent daily use. Detox and energy benefits are usually felt first.</p>"
+            "answer": "<p>Most customers notice changes within 7\u201314 days of consistent daily use. Detox and energy benefits are usually felt first.</p>"
           }
         },
         "qa_3": {
           "type": "qa",
           "settings": {
             "question": "Are there any fillers or additives?",
-            "answer": "<p>Absolutely not. We never add fillers, binders, or synthetic ingredients. What's on the label is everything that's in the bag — nothing more.</p>"
+            "answer": "<p>Absolutely not. We never add fillers, binders, or synthetic ingredients. What's on the label is everything that's in the bag \u2014 nothing more.</p>"
           }
         },
         "qa_4": {
@@ -749,6 +749,107 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "ingredient_showcase_section": {
+      "type": "iset-ingredient-showcase",
+      "blocks": {
+        "root_01": {
+          "type": "root",
+          "settings": {
+            "image": "",
+            "name": "Sarsaparilla Root",
+            "scientific_name": "Smilax regelii",
+            "description": "A root long used in Jamaican herbal tradition to support stamina and vitality."
+          }
+        },
+        "root_02": {
+          "type": "root",
+          "settings": {
+            "image": "",
+            "name": "Chaney Root",
+            "scientific_name": "Smilax balbisiana",
+            "description": "Traditionally brewed for its reputation as an everyday vitality tonic."
+          }
+        },
+        "root_03": {
+          "type": "root",
+          "settings": {
+            "image": "",
+            "name": "Strongback",
+            "scientific_name": "Morinda royoc",
+            "description": "Named for its traditional use supporting strength and endurance."
+          }
+        },
+        "root_04": {
+          "type": "root",
+          "settings": {
+            "image": "",
+            "name": "Jolt of Strength",
+            "scientific_name": "Pithecoctenium echinatum",
+            "description": "A root prized in traditional preparations for a natural energizing lift."
+          }
+        },
+        "root_05": {
+          "type": "root",
+          "settings": {
+            "image": "",
+            "name": "Ramoon Bark",
+            "scientific_name": "Trophis racemosa",
+            "description": "Used traditionally as part of a daily wellness tonic."
+          }
+        },
+        "root_06": {
+          "type": "root",
+          "settings": {
+            "image": "",
+            "name": "Puron Bark",
+            "scientific_name": "Prunus occidentalis",
+            "description": "A traditional ingredient valued for its grounding, nourishing qualities."
+          }
+        },
+        "root_07": {
+          "type": "root",
+          "settings": {
+            "image": "",
+            "name": "Blue Vervain Root",
+            "scientific_name": "Stachytarpheta jamaicensis",
+            "description": "Traditionally used to support calm and balance."
+          }
+        },
+        "root_08": {
+          "type": "root",
+          "settings": {
+            "image": "",
+            "name": "Four Man Strength",
+            "scientific_name": "",
+            "description": "Named for its traditional reputation as a potent tonic root."
+          }
+        }
+      },
+      "block_order": [
+        "root_01",
+        "root_02",
+        "root_03",
+        "root_04",
+        "root_05",
+        "root_06",
+        "root_07",
+        "root_08"
+      ],
+      "settings": {
+        "heading": "What's actually in it",
+        "subheading": "Eight wildcrafted roots, each with centuries of Jamaican herbal tradition behind it.",
+        "heading_color": "#1c2a0f",
+        "subheading_color": "#5a7040",
+        "active_color": "#4a6b1a",
+        "border_color": "#4a6b1a2e",
+        "image_aspect_ratio": "4/5",
+        "image_radius": 24,
+        "image_placeholder_bg": "#eef6d8",
+        "background_color": "#ffffff",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -757,6 +858,7 @@
     "rich_text_E3wPxY",
     "image_with_text_RJXTa9",
     "image_with_text_aaPQ8P",
+    "ingredient_showcase_section",
     "comparison_table_section",
     "guarantee_section",
     "faq_section",
