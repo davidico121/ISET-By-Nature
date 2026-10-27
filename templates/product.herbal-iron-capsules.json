@@ -603,35 +603,52 @@
         "padding_bottom": 52
       }
     },
-    "spec_table_section": {
-      "type": "iset-spec-table",
+    "comparison_table_section": {
+      "type": "iset-comparison-table",
       "blocks": {
         "row_1": {
           "type": "row",
           "settings": {
-            "label": "Root sourcing",
-            "value": "8 wildcrafted Jamaican roots"
+            "row_label": "Root Count",
+            "our_value": "✓ 8 wildcrafted roots",
+            "comp1_value": "✗ 0",
+            "comp2_value": "✗ 0"
           }
         },
         "row_2": {
           "type": "row",
           "settings": {
-            "label": "Fillers & binders",
-            "value": "None added"
+            "row_label": "Source",
+            "our_value": "✓ Wildcrafted",
+            "comp1_value": "✗ Lab-made",
+            "comp2_value": "✗ Lab-made"
           }
         },
         "row_3": {
           "type": "row",
           "settings": {
-            "label": "Dose",
-            "value": "750mg per capsule"
+            "row_label": "Fillers & Binders",
+            "our_value": "✓ None",
+            "comp1_value": "✗ Common",
+            "comp2_value": "✗ Common"
           }
         },
         "row_4": {
           "type": "row",
           "settings": {
-            "label": "Diet",
-            "value": "Vegan, gluten-free"
+            "row_label": "Caffeine",
+            "our_value": "✓ 0mg",
+            "comp1_value": "Varies",
+            "comp2_value": "✗ High"
+          }
+        },
+        "row_5": {
+          "type": "row",
+          "settings": {
+            "row_label": "Tradition",
+            "our_value": "✓ Centuries of use",
+            "comp1_value": "✗ None",
+            "comp2_value": "✗ None"
           }
         }
       },
@@ -639,16 +656,21 @@
         "row_1",
         "row_2",
         "row_3",
-        "row_4"
+        "row_4",
+        "row_5"
       ],
       "settings": {
-        "heading": "The ISET Standard",
+        "heading": "Why Herbal Iron Capsules",
         "heading_color": "#1c2a0f",
         "subheading": "",
         "subheading_color": "#5a7040",
-        "row_background": "#ffffff",
+        "our_column_label": "Herbal Iron Capsules",
+        "our_column_bg": "#1c2a0f",
+        "our_column_text": "#8aab35",
+        "comp1_label": "Generic Multivitamin",
+        "comp2_label": "Synthetic Energy Pills",
+        "table_background": "#ffffff",
         "border_color": "#4a6b1a2e",
-        "check_color": "#4a6b1a",
         "background_color": "#f7f3eb",
         "padding_top": 52,
         "padding_bottom": 52
@@ -661,7 +683,7 @@
     "rich_text_E3wPxY",
     "image_with_text_RJXTa9",
     "why_capsules_section",
-    "spec_table_section",
+    "comparison_table_section",
     "guarantee_section",
     "faq_section",
     "related-products",
