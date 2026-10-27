@@ -96,6 +96,21 @@
   #shopify-section-{{ section.id }} .ip-cmp-header .ip-cmp-cell--ours .ip-cmp-col-label {
     font-weight: 800;
   }
+  #shopify-section-{{ section.id }} .ip-cmp-our-pick {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    background: {{ section.settings.badge_bg_color }};
+    color: {{ section.settings.badge_text_color }};
+    font-size: 9.5px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 999px;
+    margin-bottom: 6px;
+    white-space: nowrap;
+  }
   #shopify-section-{{ section.id }} .ip-cmp-header .ip-cmp-cell:not(.ip-cmp-cell--ours):not(.ip-cmp-cell--label) .ip-cmp-col-label {
     color: {{ section.settings.subheading_color }};
     font-weight: 600;
@@ -188,6 +203,9 @@
       <div class="ip-cmp-row ip-cmp-header">
         <div class="ip-cmp-cell ip-cmp-cell--label"></div>
         <div class="ip-cmp-cell ip-cmp-cell--ours">
+          {%- if section.settings.show_badge and section.settings.badge_text != blank -%}
+            <span class="ip-cmp-our-pick">&#9733; {{ section.settings.badge_text | escape }}</span>
+          {%- endif -%}
           {%- if section.settings.our_column_image != blank -%}
             {{ section.settings.our_column_image | image_url: width: 240 | image_tag: class: 'ip-cmp-col-icon', loading: 'lazy' }}
           {%- endif -%}
@@ -301,6 +319,30 @@
       "id": "our_column_bg",
       "label": "Our column background",
       "default": "#eef4e6"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badge",
+      "label": "Show \"Our Pick\" badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "Our Pick"
+    },
+    {
+      "type": "color",
+      "id": "badge_bg_color",
+      "label": "Badge background",
+      "default": "#4a6b1a"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#f5f0e8"
     },
     {
       "type": "text",

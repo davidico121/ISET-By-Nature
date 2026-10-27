@@ -252,12 +252,6 @@
             "mobile_show_price_in_button": false,
             "mobile_transparent_bg": false
           }
-        },
-        "custom_liquid_fda_footer": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<p style=\"font-size:11px;font-style:italic;color:#8a9478;line-height:1.4;text-align:center;margin:8px 0 0;\">These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>"
-          }
         }
       },
       "block_order": [
@@ -269,7 +263,6 @@
         "b2d15a96-0f0a-44d0-a3ae-1a090fa30347",
         "buy_buttons",
         "98db29ee-a7dc-429e-8129-bf71131627da",
-        "custom_liquid_fda_footer",
         "custom_liquid_BRXWQV",
         "collapsible_tab_jfph3D",
         "collapsible_tab_Kbj8z6",
