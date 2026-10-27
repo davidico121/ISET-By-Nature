@@ -257,9 +257,9 @@
         "collapsible_tab_how_to_use": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "How to use",
+            "heading": "HOW TO USE",
             "heading_size": "medium",
-            "icon": "none",
+            "icon": "stopwatch",
             "collapse_icon": "plus",
             "display_top_border": true,
             "open": false,
