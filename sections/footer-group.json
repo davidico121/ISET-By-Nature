@@ -59,7 +59,7 @@
           "type": "text",
           "settings": {
             "heading": "",
-            "subtext": "<p>These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>",
+            "subtext": "<p><em>These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.</em></p>",
             "width_desktop": 12,
             "width_mobile": "2"
           }
