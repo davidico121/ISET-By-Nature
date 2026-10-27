@@ -769,6 +769,113 @@
                   {%- endif -%}
                 {%- endfor -%}
               </div>
+            {%- when 'iset_review_badge' -%}
+              <div class="iset-review-badge" {{ block.shopify_attributes }}>
+                <style>
+                  #shopify-section-{{ section.id }} .iset-review-badge-pill {
+                    background: {{ block.settings.pill_background }};
+                    border: 2px solid {{ block.settings.pill_border_color }};
+                    border-radius: 999px;
+                    padding: 12px 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 12px;
+                  }
+                  #shopify-section-{{ section.id }} .iset-review-badge-avatars {
+                    flex: none;
+                    display: flex;
+                    align-items: center;
+                  }
+                  #shopify-section-{{ section.id }} .iset-review-badge-avatar {
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 999px;
+                    overflow: hidden;
+                    border: 2px solid {{ block.settings.pill_background }};
+                    background: {{ block.settings.avatar_placeholder_bg }};
+                  }
+                  #shopify-section-{{ section.id }} .iset-review-badge-avatar:not(:first-child) {
+                    margin-left: -14px;
+                  }
+                  #shopify-section-{{ section.id }} .iset-review-badge-avatar img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                  }
+                  #shopify-section-{{ section.id }} .iset-review-badge-check {
+                    position: absolute;
+                    right: -2px;
+                    bottom: -2px;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 999px;
+                    background: {{ block.settings.check_badge_color }};
+                    color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 9px;
+                    font-weight: 900;
+                    border: 2px solid {{ block.settings.pill_background }};
+                  }
+                  #shopify-section-{{ section.id }} .iset-review-badge-text {
+                    text-align: left;
+                  }
+                  #shopify-section-{{ section.id }} .iset-review-badge-top {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    flex-wrap: wrap;
+                  }
+                  #shopify-section-{{ section.id }} .iset-review-badge-stars {
+                    color: {{ block.settings.star_color }};
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                  }
+                  #shopify-section-{{ section.id }} .iset-review-badge-count {
+                    color: {{ block.settings.text_color }};
+                    font-size: 13px;
+                    font-weight: 700;
+                  }
+                  #shopify-section-{{ section.id }} .iset-review-badge-subtext {
+                    color: {{ block.settings.subtext_color }};
+                    font-size: 12px;
+                    line-height: 1.4;
+                    margin-top: 2px;
+                  }
+                </style>
+                <div class="iset-review-badge-pill">
+                  {%- if block.settings.avatar_1 != blank or block.settings.avatar_2 != blank -%}
+                    <div class="iset-review-badge-avatars">
+                      {%- if block.settings.avatar_1 != blank -%}
+                        <div class="iset-review-badge-avatar">
+                          {{ block.settings.avatar_1 | image_url: width: 96 | image_tag: loading: 'lazy' }}
+                        </div>
+                      {%- endif -%}
+                      {%- if block.settings.avatar_2 != blank -%}
+                        <div class="iset-review-badge-avatar">
+                          {{ block.settings.avatar_2 | image_url: width: 96 | image_tag: loading: 'lazy' }}
+                          {%- if block.settings.show_check_badge -%}
+                            <span class="iset-review-badge-check">&#10003;</span>
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                  <div class="iset-review-badge-text">
+                    <div class="iset-review-badge-top">
+                      <span class="iset-review-badge-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                      <span class="iset-review-badge-count">{{ product.metafields.loox.num_reviews | default: block.settings.fallback_review_count }} {{ block.settings.label_text | escape }}</span>
+                    </div>
+                    {%- if block.settings.subtext != blank -%}
+                      <div class="iset-review-badge-subtext">{{ block.settings.subtext | escape }}</div>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
             {%- when 'reviews' -%}
               {%- render 'reviews', block: block -%}
             {%- when 'rating' -%}
@@ -3103,6 +3210,105 @@
           "unit": "px",
           "label": "Bottom margin",
           "default": 15
+        }
+      ]
+    },
+    {
+      "type": "iset_review_badge",
+      "name": "ISET Review badge",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Customer photos (optional)"
+        },
+        {
+          "type": "paragraph",
+          "content": "Use real customer photos only (e.g. from review app photos), never stock images."
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar_1",
+          "label": "Avatar 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar_2",
+          "label": "Avatar 2"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_check_badge",
+          "label": "Show verified checkmark on avatar 2",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "check_badge_color",
+          "label": "Checkmark badge color",
+          "default": "#4a6b1a"
+        },
+        {
+          "type": "color",
+          "id": "avatar_placeholder_bg",
+          "label": "Avatar placeholder background",
+          "default": "#e3e8d8"
+        },
+        {
+          "type": "header",
+          "content": "Rating text"
+        },
+        {
+          "type": "color",
+          "id": "star_color",
+          "label": "Star color",
+          "default": "#4a6b1a"
+        },
+        {
+          "type": "text",
+          "id": "label_text",
+          "label": "Label after count",
+          "default": "Reviews"
+        },
+        {
+          "type": "text",
+          "id": "fallback_review_count",
+          "label": "Fallback review count",
+          "info": "Used only if the live review count isn't available.",
+          "default": "25"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Rating text color",
+          "default": "#1c2a0f"
+        },
+        {
+          "type": "textarea",
+          "id": "subtext",
+          "label": "Subtext (optional second line)",
+          "info": "Keep general/unquantified unless you have a verified number."
+        },
+        {
+          "type": "color",
+          "id": "subtext_color",
+          "label": "Subtext color",
+          "default": "#5a7040"
+        },
+        {
+          "type": "header",
+          "content": "Pill styling"
+        },
+        {
+          "type": "color",
+          "id": "pill_background",
+          "label": "Pill background",
+          "default": "#eef6d8"
+        },
+        {
+          "type": "color",
+          "id": "pill_border_color",
+          "label": "Pill border color",
+          "default": "#4a6b1a"
         }
       ]
     },

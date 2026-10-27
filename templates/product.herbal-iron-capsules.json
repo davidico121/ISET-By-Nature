@@ -149,12 +149,6 @@
             "margin_bottom": 15
           }
         },
-        "custom_liquid_BRXWQV": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% comment %}\n  ISET by Nature: Social Proof Badge\n  Shows the live rating and review count. Update the numbers below if they change.\n{% endcomment %}\n\n<div style=\"\n  width: 100%;\n  max-width: 620px;\n  background: #eef6d8;\n  border: 2px solid #4a6b1a;\n  border-radius: 999px;\n  padding: 12px 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 8px;\n  font-family: Inter, Arial, sans-serif;\n  box-sizing: border-box;\n\">\n  <span style=\"color:#4a6b1a;font-size:16px;letter-spacing:1px;\">\u2605\u2605\u2605\u2605\u2605</span>\n  <span style=\"color:#1c2a0f;font-size:13px;font-weight:700;\">{{ product.metafields.loox.num_reviews | default: 25 }} Reviews</span>\n</div>"
-          }
-        },
         "collapsible_tab_jfph3D": {
           "type": "collapsible_tab",
           "settings": {
@@ -283,6 +277,24 @@
             "margin_top": 15,
             "margin_bottom": 15
           }
+        },
+        "iset_review_badge_1": {
+          "type": "iset_review_badge",
+          "settings": {
+            "avatar_1": "",
+            "avatar_2": "",
+            "show_check_badge": true,
+            "check_badge_color": "#4a6b1a",
+            "avatar_placeholder_bg": "#e3e8d8",
+            "star_color": "#4a6b1a",
+            "label_text": "Reviews",
+            "fallback_review_count": "25",
+            "text_color": "#1c2a0f",
+            "subtext": "",
+            "subtext_color": "#5a7040",
+            "pill_background": "#eef6d8",
+            "pill_border_color": "#4a6b1a"
+          }
         }
       },
       "block_order": [
@@ -295,7 +307,7 @@
         "buy_buttons",
         "98db29ee-a7dc-429e-8129-bf71131627da",
         "iset_trust_badges_1",
-        "custom_liquid_BRXWQV",
+        "iset_review_badge_1",
         "collapsible_tab_jfph3D",
         "collapsible_tab_ingredients",
         "collapsible_tab_how_to_use",
