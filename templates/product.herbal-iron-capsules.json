@@ -393,158 +393,78 @@
       }
     },
     "rich_text_E3wPxY": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Qbqant": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>A tradition, not a trend.</p>",
-            "heading_size": "h1"
-          }
-        },
-        "text_3jkYay": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Before capsules. Before powders. Before the wellness industry existed, Jamaican families were already brewing with what grew around them. That's exactly what we bottle.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Qbqant",
-        "text_3jkYay"
-      ],
-      "name": "t:sections.rich-text.presets.name",
+      "type": "iset-rich-text",
       "settings": {
-        "visibility": "always-display",
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52,
-        "custom_colors_background": "#ffffff",
-        "custom_gradient_background": "",
-        "custom_colors_text": "#2e2a39",
-        "custom_colors_solid_button_background": "#dd1d1d",
-        "custom_colors_solid_button_text": "#ffffff"
+        "eyebrow": "",
+        "eyebrow_color": "#4a6b1a",
+        "heading": "A tradition, not a trend.",
+        "heading_color": "#1c2a0f",
+        "body": "Before capsules. Before powders. Before the wellness industry existed, Jamaican families were already brewing with what grew around them. That's exactly what we bottle.",
+        "body_color": "#5a7040",
+        "background_color": "#ffffff",
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "image_with_text_RJXTa9": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_U7WbxE": {
-          "type": "heading",
-          "settings": {
-            "heading": "Straight from Jamaican soil.",
-            "heading_size": "h1"
-          }
-        },
-        "text_WjfCAB": {
-          "type": "text",
-          "settings": {
-            "text": "<p>This herb has been growing wild in Jamaica for centuries. We wildcraft it by hand, dry it under the Jamaican sun, and ship it to you without interference. No processing. No additives. No compromise.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_U7WbxE",
-        "text_WjfCAB"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
+      "type": "iset-how-to-split",
+      "blocks": {},
+      "block_order": [],
       "settings": {
-        "visibility": "always-display",
         "image": "shopify://shop_images/2148791497.jpg",
-        "video_autoplay": true,
-        "height": "adapt",
-        "full_desktop_width": false,
-        "content_layout": "no-overlap",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
-        "section_color_scheme": "background-1",
-        "mobile_direction": "normal",
-        "mobile_image_quanlity": "2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "custom_colors_background": "#2e2a39",
-        "custom_gradient_background": "",
-        "custom_colors_text": "#ffffff",
-        "custom_colors_solid_button_background": "#dd1d1d",
-        "custom_colors_solid_button_text": "#ffffff",
-        "custom_colors_outline_button": "#dd1d1d",
-        "custom_section_colors_background": "#ffffff",
-        "custom_section_gradient_background": ""
+        "placeholder_icon": "\ud83c\udf3f",
+        "image_position": "left",
+        "image_aspect_ratio": "4/5",
+        "image_radius": 24,
+        "image_placeholder_bg": "#eef6d8",
+        "eyebrow": "",
+        "eyebrow_color": "#4a6b1a",
+        "heading": "Straight from Jamaican soil.",
+        "heading_color": "#1c2a0f",
+        "subheading": "This herb has been growing wild in Jamaica for centuries. We wildcraft it by hand, dry it under the Jamaican sun, and ship it to you without interference. No processing. No additives. No compromise.",
+        "subheading_color": "#5a7040",
+        "cta_bg_color": "#1c2a0f",
+        "cta_text_color": "#f5f0e8",
+        "step_num_bg": "#1c2a0f",
+        "step_num_color": "#8aab35",
+        "background_color": "#f7f3eb",
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
     "image_with_text_aaPQ8P": {
-      "type": "image-with-text",
+      "type": "iset-how-to-split",
       "blocks": {
-        "caption_x6xy7k": {
-          "type": "caption",
-          "settings": {
-            "caption": "Why capsules",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_46i4cU": {
-          "type": "heading",
-          "settings": {
-            "heading": "Same roots. No brewing required.",
-            "heading_size": "h1"
-          }
-        },
-        "text_Q8Gcwc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>If you want the tradition of Herbal Iron without the daily brew, this is it: the same 6 wildcrafted Jamaican roots, in a capsule you can take anywhere. For home, travel, or mornings when there's no time to brew.</p>",
-            "text_style": "body"
-          }
-        },
         "button_shop_now": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Now",
-            "button_link": "#MainContent"
+            "button_label": "Shop Now"
           }
         }
       },
       "block_order": [
-        "caption_x6xy7k",
-        "heading_46i4cU",
-        "text_Q8Gcwc",
         "button_shop_now"
       ],
-      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "visibility": "always-display",
-        "video_autoplay": true,
-        "height": "adapt",
-        "full_desktop_width": false,
-        "content_layout": "no-overlap",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
-        "section_color_scheme": "background-1",
-        "mobile_direction": "normal",
-        "mobile_image_quanlity": "2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "custom_colors_background": "#2e2a39",
-        "custom_gradient_background": "",
-        "custom_colors_text": "#ffffff",
-        "custom_colors_solid_button_background": "#dd1d1d",
-        "custom_colors_solid_button_text": "#ffffff",
-        "custom_colors_outline_button": "#dd1d1d",
-        "custom_section_colors_background": "#ffffff",
-        "custom_section_gradient_background": ""
+        "image": "",
+        "placeholder_icon": "\ud83d\udc8a",
+        "image_position": "right",
+        "image_aspect_ratio": "4/5",
+        "image_radius": 24,
+        "image_placeholder_bg": "#eef6d8",
+        "eyebrow": "Why capsules",
+        "eyebrow_color": "#4a6b1a",
+        "heading": "Same roots. No brewing required.",
+        "heading_color": "#1c2a0f",
+        "subheading": "If you want the tradition of Herbal Iron without the daily brew, this is it: the same 6 wildcrafted Jamaican roots, in a capsule you can take anywhere. For home, travel, or mornings when there's no time to brew.",
+        "subheading_color": "#5a7040",
+        "cta_bg_color": "#1c2a0f",
+        "cta_text_color": "#f5f0e8",
+        "step_num_bg": "#1c2a0f",
+        "step_num_color": "#8aab35",
+        "background_color": "#eef6d8",
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
     "comparison_table_section": {

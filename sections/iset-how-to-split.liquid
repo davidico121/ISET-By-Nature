@@ -104,6 +104,25 @@
     font-size: 12.5px;
     line-height: 1.45;
   }
+  #shopify-section-{{ section.id }} .ip-lifestyle-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    padding: 14px 34px;
+    border-radius: 999px;
+    background: {{ section.settings.cta_bg_color }};
+    color: {{ section.settings.cta_text_color }};
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  #shopify-section-{{ section.id }} .ip-lifestyle-cta:hover {
+    opacity: 0.88;
+  }
   @media screen and (max-width: 749px) {
     #shopify-section-{{ section.id }} .ip-lifestyle-grid {
       grid-template-columns: 1fr;
@@ -132,9 +151,10 @@
         {%- if section.settings.subheading != blank -%}
           <p class="ip-subheading">{{ section.settings.subheading | escape }}</p>
         {%- endif -%}
-        {%- if section.blocks.size > 0 -%}
+        {%- assign step_blocks = section.blocks | where: 'type', 'step' -%}
+        {%- if step_blocks.size > 0 -%}
           <div class="ip-steps">
-            {%- for block in section.blocks -%}
+            {%- for block in step_blocks -%}
               <div class="ip-step" {{ block.shopify_attributes }}>
                 <div class="ip-step-num">{{ forloop.index }}</div>
                 <div>
@@ -145,10 +165,31 @@
             {%- endfor -%}
           </div>
         {%- endif -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'button' and block.settings.button_label != blank -%}
+            <a href="#MainContent" class="ip-lifestyle-cta" data-scroll-to-top {{ block.shopify_attributes }}>{{ block.settings.button_label | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  (function() {
+    var section = document.getElementById('shopify-section-{{ section.id }}');
+    if (!section) return;
+    var trigger = section.querySelector('[data-scroll-to-top]');
+    if (!trigger) return;
+    trigger.addEventListener('click', function(e) {
+      var target = document.getElementById('MainContent');
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  })();
+</script>
 
 {% schema %}
 {
@@ -249,6 +290,22 @@
     },
     {
       "type": "header",
+      "content": "Call to action button (optional)"
+    },
+    {
+      "type": "color",
+      "id": "cta_bg_color",
+      "label": "Button background",
+      "default": "#1c2a0f"
+    },
+    {
+      "type": "color",
+      "id": "cta_text_color",
+      "label": "Button text color",
+      "default": "#f5f0e8"
+    },
+    {
+      "type": "header",
       "content": "Step number badge"
     },
     {
@@ -310,6 +367,20 @@
           "id": "text",
           "label": "Description",
           "default": "Step description"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Shop Now",
+          "info": "Scrolls back up to the buy box."
         }
       ]
     }

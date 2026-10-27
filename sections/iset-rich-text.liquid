@@ -1,0 +1,138 @@
+{% comment %}
+  ISET by Nature: Simple centered rich text block (eyebrow + heading + body).
+  Matches the ip-* design system used across other custom sections on this
+  page. Mobile-first, fully schema-driven.
+{% endcomment %}
+
+<style>
+  #shopify-section-{{ section.id }} .ip-rt {
+    background: {{ section.settings.background_color }};
+    font-family: var(--font-body-family);
+  }
+  #shopify-section-{{ section.id }} .ip-wrap {
+    width: min(760px, calc(100% - 28px));
+    margin: 0 auto;
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+    text-align: center;
+  }
+  #shopify-section-{{ section.id }} .ip-rt-eyebrow {
+    color: {{ section.settings.eyebrow_color }};
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  #shopify-section-{{ section.id }} .ip-rt-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(24px, 4vw, 38px);
+    line-height: 1.12;
+    font-weight: 900;
+    margin: 0 0 14px;
+    color: {{ section.settings.heading_color }};
+  }
+  #shopify-section-{{ section.id }} .ip-rt-body {
+    font-size: 15px;
+    line-height: 1.65;
+    color: {{ section.settings.body_color }};
+    margin: 0;
+  }
+
+  @media screen and (min-width: 600px) {
+    #shopify-section-{{ section.id }} .ip-rt-body {
+      font-size: 17px;
+    }
+  }
+</style>
+
+<div class="ip-rt">
+  <div class="ip-wrap">
+    {%- if section.settings.eyebrow != blank -%}
+      <div class="ip-rt-eyebrow">{{ section.settings.eyebrow | escape }}</div>
+    {%- endif -%}
+    {%- if section.settings.heading != blank -%}
+      <h2 class="ip-rt-heading">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+    {%- if section.settings.body != blank -%}
+      <p class="ip-rt-body">{{ section.settings.body | escape }}</p>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ISET Rich Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow label (optional)"
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_color",
+      "label": "Eyebrow color",
+      "default": "#4a6b1a"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A tradition, not a trend."
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#1c2a0f"
+    },
+    {
+      "type": "textarea",
+      "id": "body",
+      "label": "Body text",
+      "default": "Before capsules. Before powders. Before the wellness industry existed, Jamaican families were already brewing with what grew around them. That's exactly what we bottle."
+    },
+    {
+      "type": "color",
+      "id": "body_color",
+      "label": "Body text color",
+      "default": "#5a7040"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    }
+  ],
+  "presets": [
+    {
+      "name": "ISET Rich Text"
+    }
+  ]
+}
+{% endschema %}
