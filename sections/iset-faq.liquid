@@ -6,7 +6,7 @@
 <style>
   #shopify-section-{{ section.id }} .ip-faq-section {
     background: {{ section.settings.background_color }};
-    font-family: Inter, Arial, sans-serif;
+    font-family: var(--font-body-family);
   }
   #shopify-section-{{ section.id }} .ip-wrap {
     width: min(1100px, calc(100% - 28px));
@@ -60,7 +60,7 @@
     font-size: 20px;
     color: {{ section.settings.icon_color }};
     flex: 0 0 auto;
-    font-family: Inter, Arial, sans-serif;
+    font-family: var(--font-body-family);
   }
   #shopify-section-{{ section.id }} .ip-faq details[open] summary:after {
     content: "\2212";
