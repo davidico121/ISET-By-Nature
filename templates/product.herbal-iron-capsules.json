@@ -602,6 +602,57 @@
         "padding_top": 52,
         "padding_bottom": 52
       }
+    },
+    "spec_table_section": {
+      "type": "iset-spec-table",
+      "blocks": {
+        "row_1": {
+          "type": "row",
+          "settings": {
+            "label": "Root sourcing",
+            "value": "8 wildcrafted Jamaican roots"
+          }
+        },
+        "row_2": {
+          "type": "row",
+          "settings": {
+            "label": "Fillers & binders",
+            "value": "None added"
+          }
+        },
+        "row_3": {
+          "type": "row",
+          "settings": {
+            "label": "Dose",
+            "value": "750mg per capsule"
+          }
+        },
+        "row_4": {
+          "type": "row",
+          "settings": {
+            "label": "Diet",
+            "value": "Vegan, gluten-free"
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4"
+      ],
+      "settings": {
+        "heading": "The ISET Standard",
+        "heading_color": "#1c2a0f",
+        "subheading": "",
+        "subheading_color": "#5a7040",
+        "row_background": "#ffffff",
+        "border_color": "#4a6b1a2e",
+        "check_color": "#4a6b1a",
+        "background_color": "#f7f3eb",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -610,6 +661,7 @@
     "rich_text_E3wPxY",
     "image_with_text_RJXTa9",
     "why_capsules_section",
+    "spec_table_section",
     "guarantee_section",
     "faq_section",
     "related-products",
