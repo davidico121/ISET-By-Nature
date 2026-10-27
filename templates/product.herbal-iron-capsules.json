@@ -253,6 +253,21 @@
             "mobile_show_price_in_button": false,
             "mobile_transparent_bg": false
           }
+        },
+        "collapsible_tab_how_to_use": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to use",
+            "heading_size": "medium",
+            "icon": "none",
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p>Take 2–3 capsules each morning upon waking, with water. One bottle lasts about a month at the recommended dose. Best taken at the same time each day.</p>",
+            "page": "",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
         }
       },
       "block_order": [
@@ -267,6 +282,7 @@
         "custom_liquid_BRXWQV",
         "collapsible_tab_jfph3D",
         "collapsible_tab_ingredients",
+        "collapsible_tab_how_to_use",
         "collapsible_tab_KPrm8g",
         "collapsible_tab_mwzQVY",
         "custom_liquid_ECbCtM",
@@ -448,55 +464,6 @@
         "custom_section_gradient_background": ""
       }
     },
-    "daily_routine_section": {
-      "type": "iset-how-to-split",
-      "blocks": {
-        "step_1": {
-          "type": "step",
-          "settings": {
-            "title": "Morning",
-            "text": "Take 2–3 capsules upon waking, with water."
-          }
-        },
-        "step_2": {
-          "type": "step",
-          "settings": {
-            "title": "Daily",
-            "text": "Same time each day works best. The ritual is the point."
-          }
-        },
-        "step_3": {
-          "type": "step",
-          "settings": {
-            "title": "Ongoing",
-            "text": "One bottle lasts about a month at the recommended dose."
-          }
-        }
-      },
-      "block_order": [
-        "step_1",
-        "step_2",
-        "step_3"
-      ],
-      "settings": {
-        "placeholder_icon": "☕",
-        "image_position": "left",
-        "image_aspect_ratio": "1/1",
-        "image_radius": 24,
-        "image_placeholder_bg": "#eef6d8",
-        "eyebrow": "How to take it",
-        "eyebrow_color": "#4a6b1a",
-        "heading": "How to make it part of your morning.",
-        "heading_color": "#1c2a0f",
-        "subheading": "No countdown, no milestones to hit, just a simple daily routine.",
-        "subheading_color": "#5a7040",
-        "step_num_bg": "#1c2a0f",
-        "step_num_color": "#8aab35",
-        "background_color": "#eef6d8",
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
-    },
     "why_capsules_section": {
       "type": "iset-how-to-split",
       "settings": {
@@ -642,7 +609,6 @@
     "horizontal_ticker_TgbchM",
     "rich_text_E3wPxY",
     "image_with_text_RJXTa9",
-    "daily_routine_section",
     "why_capsules_section",
     "guarantee_section",
     "faq_section",
